@@ -1,5 +1,26 @@
 {
   "schema": 1,
-  "checked": "2026-11-04T13:00:00Z",
-  "items": []
+  "checked": "2026-11-05T13:39:11Z",
+  "items": [
+    {
+      "id": "2026-11-04-chatgpt-images-2-6",
+      "date": "2026-11-04",
+      "added": "2026-11-05T13:39:11Z",
+      "cat": "model",
+      "title": "OpenAI, ChatGPT Images 2.6 ile hareketli GIF üretimini getirdi",
+      "summary": "ChatGPT'nin görsel aracı 2.6 sürümüyle animasyonlu GIF oluşturabiliyor ve kişi, evcil hayvan ya da karakter görsellerini tekrar kullanmak için referans olarak saklayabiliyor. API tarafında yaklaşık altı saniyede görsel üreten GPT-Image-2.6 Flare ile daha tutarlı düzenlemeler ve SVG dışa aktarımı sunan Sunburst modelleri duyuruldu.",
+      "source": "OpenAI",
+      "url": "https://community.openai.com/t/images-upgraded-introducing-chatgpt-images-2-6/1412901"
+    },
+    {
+      "id": "2026-11-05-openai-948-linux-root-exploits",
+      "date": "2026-11-05",
+      "added": "2026-11-05T13:39:11Z",
+      "cat": "research",
+      "title": "OpenAI'ın ajan hattı Linux çekirdeğinde 948 root açığı için çalışan istismar üretti",
+      "summary": "OpenAI'ın henüz yayımlanmamış bir siber güvenlik modeliyle çalışan ajanlar, Ekim'deki bir taramada 1.724 çekirdek açığını doğruladı ve 948'i için yerel root yetkisi veren istismar yazdı; toplam maliyet yaklaşık 1,2 milyon dolar. Sonuç, yapay zekanın hem saldırı hem savunma tarafında güvenlik araştırmasını ne kadar ucuzlattığını gösteriyor; tarama sürerken 100'den fazla açık yamalandı.",
+      "source": "SecurityOnline",
+      "url": "https://securityonline.info/openai-cyber-model-linux-kernel-vulnerabilities/"
+    }
+  ]
 }
