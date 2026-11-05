@@ -4,107 +4,131 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>AI Haberleri</title>
-<meta name="description" content="Model çıkışları, araştırma ve Türkiye'den yapay zeka haberleri; günde üç kez güncellenir.">
+<meta name="description" content="Model çıkışları, araştırma ve Türkiye'den yapay zeka haberleri; günde üç baskı.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,750&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Onest:wght@400;500;600&display=swap">
 <style>
 :root {
-  --bg: #f4f6f8; --surface: #ffffff; --fg: #141a22; --muted: #5a6675; --line: #dbe1e8; --line-soft: #ebeff3;
-  --accent: #0e6e8c; --accent-weak: #dcedf3;
-  --c-model: #c45f33; --c-model-weak: #f7e6dd;
-  --c-research: #3f68d6; --c-research-weak: #e2e9fa;
-  --c-turkey: #b3263a; --c-turkey-weak: #f6dfe3;
-  --f-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
-  --f-body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
-  --f-mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  --paper: #eef1f6; --sheet: #ffffff; --ink: #0e1b3d; --ink-2: #4a5677; --ink-3: #8a93ab; --rule: #d5dbe7;
+  --cobalt: #2f5bea; --teal: #0f8a7e; --red: #d7263d;
+  --f-display: "Unbounded", "Arial Black", system-ui, sans-serif;
+  --f-body: "Onest", "Segoe UI", system-ui, sans-serif;
 }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
-  --bg: #0f141a; --surface: #161d25; --fg: #e6ebf0; --muted: #93a0ae; --line: #2a3440; --line-soft: #1f2832;
-  --accent: #4fb3d4; --accent-weak: #16313b;
-  --c-model: #e58a5f; --c-model-weak: #3a241a;
-  --c-research: #7d9cf0; --c-research-weak: #1c2645;
-  --c-turkey: #ec6b7d; --c-turkey-weak: #3d1a20;
+  --paper: #0b1224; --sheet: #121b33; --ink: #e8edf8; --ink-2: #a9b3cc; --ink-3: #6c7795; --rule: #243050;
+  --cobalt: #7d9bff; --teal: #3cc4b5; --red: #ff6275;
 } }
 :root[data-theme="dark"] {
-  --bg: #0f141a; --surface: #161d25; --fg: #e6ebf0; --muted: #93a0ae; --line: #2a3440; --line-soft: #1f2832;
-  --accent: #4fb3d4; --accent-weak: #16313b;
-  --c-model: #e58a5f; --c-model-weak: #3a241a;
-  --c-research: #7d9cf0; --c-research-weak: #1c2645;
-  --c-turkey: #ec6b7d; --c-turkey-weak: #3d1a20;
+  --paper: #0b1224; --sheet: #121b33; --ink: #e8edf8; --ink-2: #a9b3cc; --ink-3: #6c7795; --rule: #243050;
+  --cobalt: #7d9bff; --teal: #3cc4b5; --red: #ff6275;
 }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
-body { margin: 0; background: var(--bg); color: var(--fg); font: 400 16px/1.55 var(--f-body); }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 400 17px/1.6 var(--f-body); }
 a { color: inherit; }
-.wrap { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+:focus-visible { outline: 2px solid var(--cobalt); outline-offset: 3px; border-radius: 4px; }
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 20px 72px; }
 
-header h1 { font: 750 clamp(30px, 6vw, 42px)/1.05 var(--f-display); letter-spacing: -0.02em; margin: 0 0 6px; }
-header p { margin: 0; color: var(--muted); font-size: 15px; }
-.meta { margin-top: 10px; font: 400 13px/1.4 var(--f-mono); color: var(--muted); }
+/* hero: today's date and the three daily editions */
+.hero { padding: 44px 0 28px; }
+.brand { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 36px; }
+.brand b { font: 700 15px/1 var(--f-display); letter-spacing: -0.01em; }
+.theme { border: 1px solid var(--rule); background: transparent; color: var(--ink-2); border-radius: 999px;
+  height: 32px; padding: 0 12px; font: 500 13px/1 var(--f-body); cursor: pointer; }
+.date { font: 700 clamp(40px, 10vw, 76px)/0.95 var(--f-display); letter-spacing: -0.035em; margin: 0; }
+.weekday { font: 500 clamp(18px, 3.4vw, 24px)/1.2 var(--f-display); color: var(--ink-2); margin: 10px 0 0; letter-spacing: -0.01em; }
 
-.bar { position: sticky; top: 0; z-index: 5; background: color-mix(in srgb, var(--bg) 88%, transparent);
-  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
-  margin: 22px -16px 8px; padding: 10px 16px; border-bottom: 1px solid var(--line-soft);
-  display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
-.chip { font: 500 14px/1 var(--f-body); padding: 8px 12px; border-radius: 999px; border: 1px solid var(--line);
-  background: var(--surface); color: var(--fg); cursor: pointer; display: inline-flex; gap: 6px; align-items: center; }
-.chip .n { font: 400 12px/1 var(--f-mono); color: var(--muted); }
-.chip[aria-pressed="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
-.chip[aria-pressed="true"] .n { color: inherit; opacity: .7; }
-.chip:focus-visible, .theme:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-.theme { margin-left: auto; border: 1px solid var(--line); background: var(--surface); color: var(--muted);
-  border-radius: 999px; width: 34px; height: 34px; cursor: pointer; font-size: 15px; }
+.editions { list-style: none; margin: 34px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); position: relative; }
+.editions::before { content: ""; position: absolute; left: 7px; right: 7px; top: 7px; height: 2px; background: var(--rule); }
+.editions::after { content: ""; position: absolute; left: 7px; top: 7px; height: 2px; background: var(--cobalt); width: var(--p, 0%); transition: width .9s cubic-bezier(.2,.7,.2,1); }
+.editions li { position: relative; padding-top: 26px; }
+.editions li::before { content: ""; position: absolute; top: 0; left: 0; width: 16px; height: 16px; border-radius: 50%;
+  background: var(--paper); border: 2px solid var(--rule); box-sizing: border-box; }
+.editions li.done::before { background: var(--cobalt); border-color: var(--cobalt); }
+.editions li.next::before { border-color: var(--cobalt); }
+.editions strong { display: block; font: 600 15px/1.3 var(--f-body); }
+.editions span { font-size: 14px; color: var(--ink-3); }
+.editions li.done span { color: var(--ink-2); }
+.status { margin: 22px 0 0; font-size: 15px; color: var(--ink-2); }
 
-h2.day { font: 600 13px/1 var(--f-mono); text-transform: uppercase; letter-spacing: .06em; color: var(--muted);
-  margin: 28px 0 10px; display: flex; gap: 10px; align-items: center; }
-h2.day::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+/* filter */
+.filter { position: sticky; top: 0; z-index: 5; background: var(--paper); margin: 8px -20px 0; padding: 12px 20px;
+  border-bottom: 1px solid var(--rule); display: flex; flex-wrap: wrap; gap: 4px 6px; }
+.filter::-webkit-scrollbar { display: none; }
+.filter button { flex: none; display: inline-flex; align-items: center; gap: 8px; border: 0; background: transparent; color: var(--ink-2);
+  font: 500 15px/1 var(--f-body); padding: 9px 12px; border-radius: 8px; cursor: pointer; }
+.filter button:hover { color: var(--ink); }
+.filter button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.filter i { width: 8px; height: 8px; border-radius: 50%; background: var(--c, var(--ink-3)); }
+.filter button[aria-pressed="true"] i { background: var(--c, var(--paper)); }
+.filter small { font-size: 13px; opacity: .65; }
 
-article { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; margin-bottom: 10px; }
-article h3 { font: 600 18px/1.35 var(--f-body); margin: 8px 0 6px; }
-article h3 a { text-decoration: none; }
-article h3 a:hover { text-decoration: underline; text-underline-offset: 3px; }
-article p { margin: 0; color: var(--fg); opacity: .88; font-size: 15px; }
-.tag { display: inline-block; font: 500 12px/1 var(--f-body); padding: 5px 8px; border-radius: 6px; }
-.tag.model { color: var(--c-model); background: var(--c-model-weak); }
-.tag.research { color: var(--c-research); background: var(--c-research-weak); }
-.tag.turkey { color: var(--c-turkey); background: var(--c-turkey-weak); }
-.src { margin-top: 10px; font: 400 13px/1.4 var(--f-mono); color: var(--muted); display: flex; gap: 6px; flex-wrap: wrap; }
-.src a { color: var(--accent); text-decoration: none; }
-.src a:hover { text-decoration: underline; }
-.new { font: 500 11px/1 var(--f-mono); color: var(--accent); background: var(--accent-weak); padding: 4px 6px; border-radius: 5px; margin-left: 6px; vertical-align: 1px; }
+/* list */
+.day { font: 700 22px/1.2 var(--f-display); letter-spacing: -0.02em; margin: 44px 0 6px; }
+.day small { font: 400 15px var(--f-body); color: var(--ink-3); letter-spacing: 0; margin-left: 8px; }
+.item { --c: var(--ink-3); position: relative; padding: 20px 0 22px 22px; border-bottom: 1px solid var(--rule); }
+.item:last-of-type { border-bottom: 0; }
+.item::before { content: ""; position: absolute; left: 0; top: 24px; bottom: 26px; width: 3px; border-radius: 2px; background: var(--c); }
+.item.model, .filter .model { --c: var(--cobalt); }
+.item.research, .filter .research { --c: var(--teal); }
+.item.turkey, .filter .turkey { --c: var(--red); }
+.cat { font: 600 13px/1 var(--f-body); color: var(--c); }
+.cat .new { color: var(--ink); background: var(--sheet); border: 1px solid var(--rule); border-radius: 999px; padding: 3px 8px; margin-left: 8px; font-weight: 500; }
+.item h3 { font: 600 clamp(19px, 2.6vw, 21px)/1.35 var(--f-body); margin: 8px 0 8px; letter-spacing: -0.005em; text-wrap: balance; }
+.item h3 a { text-decoration: none; }
+.item h3 a:hover { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+.item p { margin: 0; color: var(--ink-2); font-size: 16px; line-height: 1.62; }
+.src { display: inline-block; margin-top: 12px; font-size: 14px; color: var(--ink-2); text-decoration: none; }
+.src b { color: var(--ink); font-weight: 600; }
+.src:hover b { text-decoration: underline; text-underline-offset: 3px; }
 
-.empty { color: var(--muted); text-align: center; padding: 48px 16px; border: 1px dashed var(--line); border-radius: 12px; margin-top: 24px; }
-.archive { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--line); display: flex; gap: 10px; align-items: center; flex-wrap: wrap; color: var(--muted); font-size: 14px; }
+.empty { margin-top: 48px; padding: 32px; border-radius: 12px; background: var(--sheet); color: var(--ink-2); }
+.empty b { display: block; color: var(--ink); font: 700 18px/1.3 var(--f-display); margin-bottom: 6px; }
+
+.archive { margin-top: 56px; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; font-size: 15px; color: var(--ink-2); }
 .archive[hidden] { display: none; }
-.archive select { font: 400 14px var(--f-body); padding: 7px 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--fg); }
-footer { margin-top: 28px; color: var(--muted); font-size: 13px; }
+.archive select { font: 500 15px var(--f-body); padding: 8px 10px; border-radius: 8px; border: 1px solid var(--rule); background: var(--sheet); color: var(--ink); }
+footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--rule); color: var(--ink-3); font-size: 14px; line-height: 1.55; }
+
+@media (max-width: 480px) {
+  .hero { padding-top: 28px; }
+  .brand { margin-bottom: 28px; }
+  .editions strong { font-size: 14px; }
+  .editions span { font-size: 13px; }
+}
+@media (prefers-reduced-motion: reduce) { .editions::after { transition: none; } }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header>
-    <h1>AI Haberleri</h1>
-    <p>Model çıkışları, araştırma ve Türkiye'den yapay zeka gelişmeleri. Kısa Türkçe özetler, orijinal kaynak linkleriyle.</p>
-    <div class="meta" id="meta">Yükleniyor…</div>
+  <header class="hero">
+    <div class="brand"><b>AI Haberleri</b><button class="theme" id="theme" aria-label="Temayı değiştir">Tema</button></div>
+    <h1 class="date" id="date">&nbsp;</h1>
+    <p class="weekday" id="weekday">&nbsp;</p>
+    <ol class="editions" id="editions" aria-label="Bugünün baskıları">
+      <li data-t="07:46"><strong>Sabah</strong><span>08:00</span></li>
+      <li data-t="14:46"><strong>Öğle</strong><span>15:00</span></li>
+      <li data-t="19:46"><strong>Akşam</strong><span>20:00</span></li>
+    </ol>
+    <p class="status" id="status">Yükleniyor…</p>
   </header>
 
-  <nav class="bar" aria-label="Kategori filtresi">
-    <button class="chip" data-cat="all" aria-pressed="true">Tümü <span class="n"></span></button>
-    <button class="chip" data-cat="model" aria-pressed="false">Model ve ürün <span class="n"></span></button>
-    <button class="chip" data-cat="research" aria-pressed="false">Araştırma <span class="n"></span></button>
-    <button class="chip" data-cat="turkey" aria-pressed="false">Türkiye <span class="n"></span></button>
-    <button class="theme" id="theme" title="Açık / koyu tema" aria-label="Temayı değiştir">◐</button>
+  <nav class="filter" aria-label="Kategori">
+    <button data-cat="all" aria-pressed="true">Tümü <small></small></button>
+    <button data-cat="model" class="model" aria-pressed="false"><i></i>Model ve ürün <small></small></button>
+    <button data-cat="research" class="research" aria-pressed="false"><i></i>Araştırma <small></small></button>
+    <button data-cat="turkey" class="turkey" aria-pressed="false"><i></i>Türkiye <small></small></button>
   </nav>
 
   <main id="list"></main>
 
   <div class="archive" id="archiveBox" hidden>
-    <label for="archive">Arşiv:</label>
+    <label for="archive">Önceki aylar</label>
     <select id="archive"><option value="">Son 30 gün</option></select>
   </div>
 
-  <footer>Günde üç kez (yaklaşık 08:00, 15:00, 20:00) bir Claude görevi tarafından güncellenir. Haberlerin içeriği kendi kaynaklarına aittir; özetler kısadır, ayrıntı için kaynağa gidin.</footer>
+  <footer>Sabah, öğle ve akşam bir Claude görevi yeni haberleri arar, önemli olanları kısa Türkçe özetlerle ekler. Haberlerin içeriği kendi kaynaklarına aittir; ayrıntı için kaynağı açın.</footer>
 </div>
 
 <script>
@@ -112,10 +136,8 @@ const CAT = { model: "Model ve ürün", research: "Araştırma", turkey: "Türki
 const TZ = "Europe/Istanbul";
 const state = { items: [], cat: "all", checked: null, archived: false };
 const $ = s => document.querySelector(s);
-
 function store(k, v) { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch { return null; } }
 
-// theme toggle: auto → dark → light
 (function () {
   const saved = store("theme");
   if (saved) document.documentElement.dataset.theme = saved;
@@ -127,62 +149,87 @@ function store(k, v) { try { if (v === undefined) return localStorage.getItem(k)
   };
 })();
 
-const dayKey = iso => new Intl.DateTimeFormat("en-CA", { timeZone: TZ }).format(new Date(iso));
-function dayLabel(d) {
-  const today = dayKey(new Date().toISOString());
-  const yest = dayKey(new Date(Date.now() - 864e5).toISOString());
-  if (d === today) return "Bugün";
-  if (d === yest) return "Dün";
-  return new Intl.DateTimeFormat("tr-TR", { day: "numeric", month: "long", weekday: "long", timeZone: "UTC" }).format(new Date(d + "T12:00:00Z"));
-}
-const fmtTime = iso => new Intl.DateTimeFormat("tr-TR", { day: "numeric", month: "long", hour: "2-digit", minute: "2-digit", timeZone: TZ }).format(new Date(iso));
+const dayKey = d => new Intl.DateTimeFormat("en-CA", { timeZone: TZ }).format(d);
+const hm = d => new Intl.DateTimeFormat("tr-TR", { hour: "2-digit", minute: "2-digit", timeZone: TZ }).format(d);
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-const host = u => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return ""; } };
+
+function hero() {
+  const now = new Date();
+  $("#date").textContent = new Intl.DateTimeFormat("tr-TR", { day: "numeric", month: "long", timeZone: TZ }).format(now);
+  $("#weekday").textContent = new Intl.DateTimeFormat("tr-TR", { weekday: "long", timeZone: TZ }).format(now);
+  const today = dayKey(now), nowHm = hm(now);
+  const checkedToday = state.checked && dayKey(new Date(state.checked)) === today ? hm(new Date(state.checked)) : null;
+  const lis = [...document.querySelectorAll(".editions li")];
+  let done = -1, next = null;
+  lis.forEach((li, i) => {
+    const isDone = checkedToday && checkedToday >= li.dataset.t;
+    li.className = isDone ? "done" : "";
+    if (isDone) done = i;
+    if (!next && nowHm < li.dataset.t) next = li;
+  });
+  if (next && !next.classList.contains("done")) next.classList.add("next");
+  requestAnimationFrame(() => $("#editions").style.setProperty("--p", (done > 0 ? done / 3 * 100 : 0) + "%"));
+  let s = state.checked ? `Son güncelleme ${checkedToday ? "bugün " + checkedToday : new Intl.DateTimeFormat("tr-TR", { day: "numeric", month: "long", hour: "2-digit", minute: "2-digit", timeZone: TZ }).format(new Date(state.checked))}.` : "";
+  s += next ? ` Sıradaki baskı ${next.querySelector("span").textContent} civarında.` : " Sıradaki baskı yarın sabah.";
+  $("#status").textContent = s;
+}
+
+function dayLabel(d) {
+  const now = new Date();
+  if (d === dayKey(now)) return ["Bugün", ""];
+  if (d === dayKey(new Date(now - 864e5))) return ["Dün", ""];
+  const dt = new Date(d + "T12:00:00Z");
+  return [new Intl.DateTimeFormat("tr-TR", { day: "numeric", month: "long", timeZone: "UTC" }).format(dt),
+          new Intl.DateTimeFormat("tr-TR", { weekday: "long", timeZone: "UTC" }).format(dt)];
+}
 
 function render() {
   const lastSeen = store("lastSeen");
-  const items = state.items
-    .filter(i => state.cat === "all" || i.cat === state.cat)
+  const items = state.items.filter(i => state.cat === "all" || i.cat === state.cat)
     .sort((a, b) => (b.date + b.added).localeCompare(a.date + a.added));
-  for (const b of document.querySelectorAll(".chip")) {
+  for (const b of document.querySelectorAll(".filter button")) {
     const c = b.dataset.cat;
     b.setAttribute("aria-pressed", String(c === state.cat));
-    b.querySelector(".n").textContent = c === "all" ? state.items.length : state.items.filter(i => i.cat === c).length;
+    b.querySelector("small").textContent = c === "all" ? state.items.length : state.items.filter(i => i.cat === c).length;
   }
   const list = $("#list");
   if (!items.length) {
-    list.innerHTML = `<div class="empty">${state.items.length ? "Bu kategoride haber yok." : "Henüz haber yok. İlk güncellemeden sonra burada görünecek."}</div>`;
+    list.innerHTML = state.items.length
+      ? `<div class="empty"><b>Bu kategoride haber yok</b>Başka bir kategori seçin ya da sıradaki baskıyı bekleyin.</div>`
+      : `<div class="empty"><b>Henüz haber yok</b>İlk baskıdan sonra haberler burada listelenecek.</div>`;
     return;
   }
   let html = "", cur = null;
   for (const it of items) {
-    if (it.date !== cur) { cur = it.date; html += `<h2 class="day">${dayLabel(it.date)}</h2>`; }
+    if (it.date !== cur) { cur = it.date; const [a, b] = dayLabel(it.date); html += `<h2 class="day">${a}${b ? `<small>${b}</small>` : ""}</h2>`; }
     const isNew = !state.archived && lastSeen && it.added > lastSeen;
-    html += `<article>
-      <span class="tag ${esc(it.cat)}">${esc(CAT[it.cat] || it.cat)}</span>${isNew ? '<span class="new">yeni</span>' : ""}
+    html += `<article class="item ${esc(it.cat)}">
+      <div class="cat">${esc(CAT[it.cat] || it.cat)}${isNew ? '<span class="new">Yeni</span>' : ""}</div>
       <h3><a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a></h3>
       <p>${esc(it.summary)}</p>
-      <div class="src"><span>${esc(it.source)}</span><span>·</span><a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(host(it.url))} ↗</a></div>
+      <a class="src" href="${esc(it.url)}" target="_blank" rel="noopener">Kaynak: <b>${esc(it.source)}</b></a>
     </article>`;
   }
   list.innerHTML = html;
 }
 
-for (const b of document.querySelectorAll(".chip")) b.onclick = () => { state.cat = b.dataset.cat; render(); };
+for (const b of document.querySelectorAll(".filter button")) b.onclick = () => { state.cat = b.dataset.cat; render(); };
 
-async function getJSON(p) { const r = await fetch(p, { cache: "no-store" }); if (!r.ok) throw new Error(r.status); return r.json(); }
+async function getJSON(p) { const r = await fetch(p, { cache: "no-store" }); if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); }
 
 async function loadLive() {
   const data = await getJSON("news.json");
   state.items = data.items; state.checked = data.checked; state.archived = false;
-  $("#meta").textContent = "Son kontrol: " + fmtTime(data.checked);
-  render();
+  hero(); render();
 }
 
 (async function init() {
+  hero();
   try { await loadLive(); }
-  catch (e) { $("#meta").textContent = "news.json okunamadı (" + e.message + ")"; $("#list").innerHTML = '<div class="empty">Haberler yüklenemedi.</div>'; return; }
-  // remember the visit after a moment so "yeni" badges survive this view
+  catch (e) {
+    $("#status").textContent = "Haberler yüklenemedi (" + e.message + "). Sayfayı yenileyin.";
+    $("#list").innerHTML = ""; return;
+  }
   setTimeout(() => state.checked && store("lastSeen", state.checked), 4000);
   try {
     const months = await getJSON("archive/index.json");
@@ -197,7 +244,6 @@ async function loadLive() {
       sel.onchange = async () => {
         if (!sel.value) return loadLive();
         state.items = await getJSON(`archive/${sel.value}.json`); state.archived = true;
-        $("#meta").textContent = "Arşiv: " + sel.selectedOptions[0].textContent;
         render(); scrollTo({ top: 0 });
       };
     }
