@@ -28,7 +28,14 @@ Not included: funding rounds, stock moves, opinion pieces, generic "AI will chan
 
 ## Sources
 
-Use `WebSearch` to find candidates and `WebFetch` to read each page before adding it. Search the window's dates explicitly (e.g. `"AI model release" November 5 2026`).
+This job runs unattended, so nothing may wait for an approval:
+
+- **Never type or build a URL yourself**, not even for the sites below. Only `WebFetch` a URL that appeared in a `WebSearch` result or in a page you already fetched in this run. A typed URL triggers an approval prompt that nobody will answer and the run stalls.
+- Find pages with `WebSearch`: use the site and topic in the query (e.g. `Anthropic news November 2026`) or the `allowed_domains` filter (e.g. `["anthropic.com"]`), then fetch the result link.
+- Don't use `curl`, `wget` or scripts to reach websites; the shell can't reach them.
+- If a fetch is refused or needs approval, skip that page and move on; note it in the final summary.
+
+Search the window's dates explicitly (e.g. `AI model release November 5 2026`). The sites below are where to look (as search terms and `allowed_domains`), not URLs to open:
 
 - **model:** anthropic.com/news, openai.com/news, blog.google/technology/ai and deepmind.google/discover/blog, ai.meta.com/blog, mistral.ai/news, x.ai/news, api-docs.deepseek.com/news, qwenlm.github.io/blog; outlets: The Verge (AI), TechCrunch (AI), Ars Technica, VentureBeat (AI), Reuters (technology).
 - **research:** huggingface.co/papers (daily trending papers), lab research blogs above, arXiv links that the outlets above or the labs point to.
