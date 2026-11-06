@@ -6,7 +6,7 @@ The page (`index.html`) reads `news.json`; nothing else in the repo changes duri
 ## Rules
 
 - Edit **only** `news.json` (and `archive/` through `node scripts/archive.mjs`). Never edit code, styles or these instructions.
-- **Window:** look for news published after `checked` in `news.json` (the previous run). If that is more than 24 hours ago, look back 24 hours only.
+- **Window:** every run looks back **36 hours** from now, not just since the previous run. Runs overlap on purpose so a story one run missed is caught by the next; the duplicate check below keeps them from being added twice.
 - **Add at most 9 items per run.** Fewer is normal. Zero is fine when nothing important happened. Never pad.
 - Skip anything already in `news.json` or `archive/` (same URL, or the same event from another outlet). If a story already listed has a genuinely new development (e.g. an announced model is now released), add it as a new item about that development.
 - **Never invent anything.** Every item must come from a page you actually read in this run, and its `url` must be that page. Do not add leaks, rumours or "reportedly" stories unless a reliable outlet confirms them on the record; when in doubt, leave it out.
@@ -35,7 +35,21 @@ This job runs unattended, so nothing may wait for an approval:
 - Don't use `curl`, `wget` or scripts to reach websites; the shell can't reach them.
 - If a fetch is refused or needs approval, skip that page and move on; note it in the final summary.
 
-Search the window's dates explicitly (e.g. `AI model release November 5 2026`). The sites below are where to look (as search terms and `allowed_domains`), not URLs to open:
+### Required sweep, every run
+
+Generic queries like `AI news` miss big launches. Run **all** of these searches every time (use today's and yesterday's date, e.g. `November 6 2026`), and read the top results that fall inside the window:
+
+1. One search per major lab, with a launch verb: `OpenAI launches`, `OpenAI announces`, `Anthropic launches Claude`, `Google Gemini launch`, `Google DeepMind announces`, `Meta AI launches`, `xAI Grok release`, `Mistral releases`, `DeepSeek releases`, `Qwen release`, `Microsoft Copilot new model`, `Apple Intelligence update`, `NVIDIA AI model release`. Add the date to each.
+2. Product names in the news: `GPT`, `Claude`, `Gemini`, `Llama`, `Grok` each with `new model` and the date. Also any model or product named in an item already in `news.json` (e.g. an announced or "upcoming" model): search whether it has now launched.
+3. Roundups: `AI news today <date>`, `this week in AI <date>`.
+4. Research: `Hugging Face daily papers <date>`, `new AI benchmark state of the art <date>`, `AI safety research <date>`.
+5. Turkey: `yapay zeka haber <tarih>`, `Türkiye yapay zeka <tarih>`, `Türkçe dil modeli`, `yapay zeka Webrazzi`.
+
+**A flagship launch from a major lab (a new GPT, Claude, Gemini, Llama or Grok model or a named variant such as a "Cyber", "Pro", "Mini" or "Flash" version) is always important.** If one happened inside the window and isn't in `news.json` yet, it must be added, ahead of anything else.
+
+Lab sites (openai.com in particular) often refuse fetches. When the primary source can't be read, use a reliable outlet that reports it on the record (e.g. The Verge, TechCrunch, Reuters, SiliconANGLE, VentureBeat, CyberScoop, Ars Technica) and use that outlet's URL. Never drop a major story only because the lab's own page wouldn't load.
+
+The sites below are where to look (as search terms and `allowed_domains`), not URLs to open:
 
 - **model:** anthropic.com/news, openai.com/news, blog.google/technology/ai and deepmind.google/discover/blog, ai.meta.com/blog, mistral.ai/news, x.ai/news, api-docs.deepseek.com/news, qwenlm.github.io/blog; outlets: The Verge (AI), TechCrunch (AI), Ars Technica, VentureBeat (AI), Reuters (technology).
 - **research:** huggingface.co/papers (daily trending papers), lab research blogs above, arXiv links that the outlets above or the labs point to.
