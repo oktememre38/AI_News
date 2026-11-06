@@ -30,7 +30,7 @@ Not included: funding rounds, stock moves, opinion pieces, generic "AI will chan
 
 This job runs unattended, so nothing may wait for an approval:
 
-- **Never type or build a URL yourself**, not even for the sites below. Only `WebFetch` a URL that appeared in a `WebSearch` result or in a page you already fetched in this run. A typed URL triggers an approval prompt that nobody will answer and the run stalls.
+- `WebSearch` and `WebFetch` are pre-approved for this repo in `.claude/settings.json`, so they never wait for an approval. Prefer fetching URLs that came from a `WebSearch` result or a page you already fetched; don't guess URLs that might not exist.
 - Find pages with `WebSearch`: use the site and topic in the query (e.g. `Anthropic news November 2026`) or the `allowed_domains` filter (e.g. `["anthropic.com"]`), then fetch the result link.
 - Don't use `curl`, `wget` or scripts to reach websites; the shell can't reach them.
 - If a fetch is refused or needs approval, skip that page and move on; note it in the final summary.
