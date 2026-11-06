@@ -7,7 +7,7 @@ The page (`index.html`) reads `news.json`; nothing else in the repo changes duri
 
 - Edit **only** `news.json` (and `archive/` through `node scripts/archive.mjs`). Never edit code, styles or these instructions.
 - **Window:** every run looks back **36 hours** from now, not just since the previous run. Runs overlap on purpose so a story one run missed is caught by the next; the duplicate check below keeps them from being added twice.
-- **Add at most 9 items per run.** Fewer is normal. Zero is fine when nothing important happened. Never pad.
+- **No limit on the number of items.** Add every story that is important; on a busy day that can be many. Zero is fine when nothing important happened. Never pad with minor stories.
 - Skip anything already in `news.json` or `archive/` (same URL, or the same event from another outlet). If a story already listed has a genuinely new development (e.g. an announced model is now released), add it as a new item about that development.
 - **Never invent anything.** Every item must come from a page you actually read in this run (or an official X post, see below), and its `url` must be that page or post. Do not add leaks, rumours or "reportedly" stories unless a reliable outlet confirms them on the record; when in doubt, leave it out.
 - Prefer the primary source (the lab's own post, the paper, the official announcement) for `url`. Use a news outlet when it is the best or only reliable account.

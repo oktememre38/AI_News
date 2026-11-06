@@ -1,5 +1,5 @@
 // Checks news.json before it is committed.
-// Errors (exit 1): broken structure, duplicates, too many new items.
+// Errors (exit 1): broken structure, duplicates.
 // Warnings: things worth a second look.
 // Usage: node scripts/validate.mjs [path-to-previous-news.json]
 import { readFileSync, existsSync } from "node:fs";
@@ -16,7 +16,6 @@ const err = m => errors.push(m), warn = m => warnings.push(m);
 const isDate = s => typeof s === "string" && /^\d{4}-\d{2}-\d{2}$/.test(s) && !isNaN(Date.parse(s));
 const isTime = s => typeof s === "string" && /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2}(\.\d+)?)?Z$/.test(s) && !isNaN(Date.parse(s));
 const CATS = ["model", "research", "turkey"];
-const MAX_NEW = 9;
 
 if (news.schema !== 1) err("schema must be 1");
 if (!isTime(news.checked)) err("checked must be a UTC time like 2026-11-05T13:46:00Z");
@@ -65,7 +64,6 @@ for (const it of news.items || []) {
 if (prev) {
   const before = new Set((prev.items || []).map(i => i.id));
   const added = (news.items || []).filter(i => !before.has(i.id));
-  if (added.length > MAX_NEW) err(`${added.length} new items, max ${MAX_NEW} per run`);
   for (const it of added) if (it.added !== news.checked) warn(`new item "${it.id}": added should equal checked`);
   const prevArchived = new Set(archived.map(i => i.id));
   for (const id of before) if (!ids.has(id) && !prevArchived.has(id)) err(`item "${id}" was removed without being archived`);
