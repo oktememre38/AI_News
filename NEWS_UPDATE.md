@@ -1,6 +1,6 @@
 # News update
 
-Instructions for the scheduled Claude job that keeps `news.json` current. It runs three times a day (around 08:00, 15:00 and 20:00 Istanbul time).
+Instructions for the scheduled Claude job that keeps `news.json` current. It runs every two hours from about 08:00 to 24:00 Istanbul time (9 runs a day).
 The page (`index.html`) reads `news.json`; nothing else in the repo changes during an update, except moving old items into `archive/` with the script below.
 
 ## Rules
@@ -9,10 +9,10 @@ The page (`index.html`) reads `news.json`; nothing else in the repo changes duri
 - **Window:** every run looks back **36 hours** from now, not just since the previous run. Runs overlap on purpose so a story one run missed is caught by the next; the duplicate check below keeps them from being added twice.
 - **Add at most 9 items per run.** Fewer is normal. Zero is fine when nothing important happened. Never pad.
 - Skip anything already in `news.json` or `archive/` (same URL, or the same event from another outlet). If a story already listed has a genuinely new development (e.g. an announced model is now released), add it as a new item about that development.
-- **Never invent anything.** Every item must come from a page you actually read in this run, and its `url` must be that page. Do not add leaks, rumours or "reportedly" stories unless a reliable outlet confirms them on the record; when in doubt, leave it out.
+- **Never invent anything.** Every item must come from a page you actually read in this run (or an official X post, see below), and its `url` must be that page or post. Do not add leaks, rumours or "reportedly" stories unless a reliable outlet confirms them on the record; when in doubt, leave it out.
 - Prefer the primary source (the lab's own post, the paper, the official announcement) for `url`. Use a news outlet when it is the best or only reliable account.
 - **Write in your own words.** `title` and `summary` are Turkish and written by you: don't translate the original headline word for word, don't copy sentences, no quotes longer than a few words. The summary says what happened and why it matters in 2–3 sentences (max 400 characters).
-- Always set `checked` to the current UTC time. Commit and push even when no item was added, so the next run's window starts from here.
+- Always set `checked` to the current UTC time. Commit and push even when no item was added.
 
 ## What counts as important
 
@@ -56,6 +56,15 @@ The sites below are where to look (as search terms and `allowed_domains`), not U
 - **turkey:** aa.com.tr (bilim-teknoloji), webrazzi.com (yapay zeka), donanimhaber.com, shiftdelete.net, t3vakfi.org, tubitak.gov.tr, cbddo.gov.tr; search in Turkish too (e.g. `yapay zeka Türkiye haber`, `Türkçe dil modeli`).
 
 If a site can't be read (HTTP 403, timeout, DNS failure), move on and note it in the final summary with the exact error.
+
+## X (Twitter)
+
+Labs often announce on X first. X pages can't be fetched (`robots_disallowed`): don't try to open x.com links, and don't use mirrors or other workarounds. Use `WebSearch` with `allowed_domains: ["x.com"]` instead; each result's title carries the post's text and author.
+
+- Every run, search X for the official accounts: `OpenAI`, `OpenAI Developers`, `Anthropic`, `Claude`, `Google DeepMind`, `Google AI`, `Gemini`, `AI at Meta`, `xAI`, `Grok`, `Mistral AI`, `DeepSeek`, `Qwen`, `Microsoft AI`, `NVIDIA AI`, `Hugging Face`, and the leaders who announce launches: Sam Altman (`sama`), Greg Brockman (`gdb`), Dario Amodei, Demis Hassabis, Sundar Pichai, Elon Musk (AI launches only), Mustafa Suleyman. Query e.g. `OpenAI introducing`, `Anthropic introducing`, `Google DeepMind announcing`, with the date.
+- Get the post's time with `node scripts/xdate.mjs <post URL>` (the ID encodes it) and keep only posts inside the window.
+- **An official account's own launch post is a primary source.** If its full text is in the search result, you may use it: `url` is the post URL, `source` is e.g. `"OpenAI (X)"`, `date` from `xdate.mjs`. If a news outlet or the lab's page has the same story and you can read it, prefer that URL (it has more detail) and use the X post only to find it.
+- Posts from anyone else (leakers, influencers, newsletters, "reportedly") are leads, never sources. Add the story only after you read it from an official account or a reliable outlet.
 
 ## news.json shape
 

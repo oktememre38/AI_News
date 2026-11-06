@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8">
-<meta name="description" content="Model çıkışları, araştırma ve Türkiye'den yapay zeka haberleri; günde üç baskı.">
+<meta name="description" content="Model çıkışları, araştırma ve Türkiye'den yapay zeka haberleri; 08:00–24:00 arası iki saatte bir güncellenir.">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>AI Haberleri</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,7 +46,7 @@ a { color: inherit; }
 .theme { margin-top: 28px; border: 1px solid var(--rule); background: none; color: var(--ink-2); font: 500 13px var(--f-head);
   padding: 7px 12px; border-radius: 999px; cursor: pointer; }
 
-/* feed: day → edition → items, hung off a time spine */
+/* feed: day → update run → items, hung off a time spine */
 main { padding-top: 48px; min-width: 0; }
 .day { font: 700 clamp(30px, 5vw, 44px)/1 var(--f-head); letter-spacing: -0.03em; margin: 0 0 8px; }
 .day + .ed { margin-top: 18px; }
@@ -119,7 +119,7 @@ footer { margin-top: 72px; padding-top: 20px; border-top: 1px solid var(--rule);
       <label for="archive">Önceki aylar</label>
       <select id="archive"><option value="">Son 30 gün</option></select>
     </div>
-    <footer>Sabah, öğle ve akşam bir Claude görevi yeni haberleri arar, önemli olanları kısa Türkçe özetlerle ekler. Haberlerin içeriği kendi kaynaklarına aittir.</footer>
+    <footer>08:00 ile 24:00 arasında iki saatte bir bir Claude görevi laboratuvarların sitelerini, haber kaynaklarını ve resmi X hesaplarını tarar, önemli olanları kısa Türkçe özetlerle ekler. Haberlerin içeriği kendi kaynaklarına aittir.</footer>
   </main>
 </div>
 <script>
@@ -131,7 +131,6 @@ function store(k, v) { try { if (v === undefined) return localStorage.getItem(k)
 const dayKey = d => new Intl.DateTimeFormat("en-CA", { timeZone: TZ }).format(d);
 const hm = d => new Intl.DateTimeFormat("tr-TR", { hour: "2-digit", minute: "2-digit", timeZone: TZ }).format(d);
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-const edition = iso => { const h = +hm(new Date(iso)).slice(0, 2); return h < 12 ? "Sabah" : h < 18 ? "Öğle" : "Akşam"; };
 const ARROW = '<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4"/></svg>';
 
 // dark by default; the button switches and remembers
@@ -147,9 +146,9 @@ function header() {
   $("#date").textContent = new Intl.DateTimeFormat("tr-TR", { day: "numeric", month: "long", weekday: "long", timeZone: TZ }).format(now);
   if (!state.checked) return;
   const c = new Date(state.checked);
-  const when = dayKey(c) === dayKey(now) ? `${edition(state.checked).toLowerCase()}, ${hm(c)}`
+  const when = dayKey(c) === dayKey(now) ? `bugün ${hm(c)}`
     : new Intl.DateTimeFormat("tr-TR", { day: "numeric", month: "long", hour: "2-digit", minute: "2-digit", timeZone: TZ }).format(c);
-  $("#status").textContent = `Son baskı ${when}. Günde üç baskı: 08:00, 15:00, 20:00.`;
+  $("#status").textContent = `Son güncelleme ${when}. 08:00–24:00 arası iki saatte bir güncellenir.`;
 }
 
 function dayLabel(d) {
@@ -170,14 +169,14 @@ function render() {
     .sort((a, b) => (b.added + b.date).localeCompare(a.added + a.date));
   if (!items.length) {
     $("#list").innerHTML = state.items.length
-      ? '<div class="empty"><b>Bu kategoride haber yok</b>Başka bir kategori seçin ya da sıradaki baskıyı bekleyin.</div>'
-      : '<div class="empty"><b>Henüz haber yok</b>İlk baskıdan sonra haberler burada listelenecek.</div>';
+      ? '<div class="empty"><b>Bu kategoride haber yok</b>Başka bir kategori seçin ya da sıradaki güncellemeyi bekleyin.</div>'
+      : '<div class="empty"><b>Henüz haber yok</b>İlk güncellemeden sonra haberler burada listelenecek.</div>';
     return;
   }
-  // group by the day and edition each item was added in
+  // group by the day and the update run each item was added in
   let html = "", curDay = null, curEd = null;
   for (const it of items) {
-    const d = dayKey(new Date(it.added)), ed = d + edition(it.added);
+    const d = dayKey(new Date(it.added)), ed = it.added;
     if (d !== curDay) {
       if (curEd) html += "</section>";
       curDay = d; curEd = null;
@@ -186,7 +185,7 @@ function render() {
     if (ed !== curEd) {
       if (curEd) html += "</section>";
       curEd = ed;
-      html += `<section class="ed"><div class="ed-h"><b>${edition(it.added)} baskısı</b>, ${hm(new Date(it.added))}</div>`;
+      html += `<section class="ed"><div class="ed-h"><b>${hm(new Date(it.added))} güncellemesi</b></div>`;
     }
     const isNew = !state.archived && lastSeen && it.added > lastSeen;
     html += `<article class="item ${esc(it.cat)}">
