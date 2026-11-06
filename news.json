@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked": "2026-11-05T16:51:08Z",
+  "checked": "2026-11-06T04:59:08Z",
   "items": [
     {
       "id": "2026-11-04-chatgpt-images-2-6",
@@ -21,6 +21,26 @@
       "summary": "OpenAI'ın henüz yayımlanmamış bir siber güvenlik modeliyle çalışan ajanlar, Ekim'deki bir taramada 1.724 çekirdek açığını doğruladı ve 948'i için yerel root yetkisi veren istismar yazdı; toplam maliyet yaklaşık 1,2 milyon dolar. Sonuç, yapay zekanın hem saldırı hem savunma tarafında güvenlik araştırmasını ne kadar ucuzlattığını gösteriyor; tarama sürerken 100'den fazla açık yamalandı.",
       "source": "SecurityOnline",
       "url": "https://securityonline.info/openai-cyber-model-linux-kernel-vulnerabilities/"
+    },
+    {
+      "id": "2026-11-05-gemini-omni-1-2-flash",
+      "date": "2026-11-05",
+      "added": "2026-11-06T04:59:08Z",
+      "cat": "model",
+      "title": "Google, Gemini Omni 1.2 Flash ile 15 saniyelik video üretimini genel kullanıma açtı",
+      "summary": "Google DeepMind’ın yeni video modeli 3 ile 15 saniye arasında, saniye adımlarıyla ayarlanabilen klipler üretip düzenleyebiliyor. 720p çıktının saniye ücreti 0,07 dolara inerek önceki sürüme göre yüzde 30 ucuzladı. Model Gemini API, Flow, Google Vids ve Gemini uygulaması üzerinden sunuluyor; çıktılar SynthID filigranı taşıyor.",
+      "source": "Kantan.News",
+      "url": "https://kantan.news/haber/google-deepmind-gemini-omni-12-flash-modelini-duyurdu"
+    },
+    {
+      "id": "2026-11-05-meta-muse-voice",
+      "date": "2026-11-05",
+      "added": "2026-11-06T04:59:08Z",
+      "cat": "model",
+      "title": "Meta’nın asistanı Muse artık gerçek zamanlı sesli sohbet ediyor",
+      "summary": "Meta, kişisel yapay zekâ asistanı Muse’a sözü kesilebilen, anlık sesli konuşma özelliği Muse Voice’u ekledi; isteğe bağlı olarak jest ve mimik yapan bir avatar da eşlik edebiliyor. Özellik şimdilik yalnızca ABD’de mobil, web ve Mac’te kullanılabiliyor; Türkiye için tarih verilmedi.",
+      "source": "ShiftDelete.Net",
+      "url": "https://shiftdelete.net/meta-muse-voice"
     }
   ]
 }
