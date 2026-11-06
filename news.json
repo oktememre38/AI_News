@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked": "2026-11-06T04:59:08Z",
+  "checked": "2026-11-06T05:08:24Z",
   "items": [
     {
       "id": "2026-11-04-chatgpt-images-2-6",
@@ -41,6 +41,56 @@
       "summary": "Meta, kişisel yapay zekâ asistanı Muse’a sözü kesilebilen, anlık sesli konuşma özelliği Muse Voice’u ekledi; isteğe bağlı olarak jest ve mimik yapan bir avatar da eşlik edebiliyor. Özellik şimdilik yalnızca ABD’de mobil, web ve Mac’te kullanılabiliyor; Türkiye için tarih verilmedi.",
       "source": "ShiftDelete.Net",
       "url": "https://shiftdelete.net/meta-muse-voice"
+    },
+    {
+      "id": "2026-11-05-openai-gpt-6-cyber",
+      "date": "2026-11-05",
+      "added": "2026-11-06T05:08:24Z",
+      "cat": "model",
+      "title": "OpenAI siber güvenliğe özel GPT-6 Cyber modelini duyurdu",
+      "summary": "OpenAI, güvenlik ekipleri için GPT-6 Cyber modelini ilk aşamada yalnızca onaylı Daybreak Red müşterilerine açtı. Şirket, modelin Firefox’ta 81 yeni açık bulduğunu ve kapsam dışı sistemlere dokunmamak için ek korumalar eklendiğini söylüyor. Saldırı yeteneği arttıkça erişimi sınırlayan bu yaklaşım, siber güvenlikte yapay zekânın çift yönlü riskini öne çıkarıyor.",
+      "source": "CyberScoop",
+      "url": "https://cyberscoop.com/openai-gpt-6-cyber-security-model/"
+    },
+    {
+      "id": "2026-11-05-claude-personal-finance",
+      "date": "2026-11-05",
+      "added": "2026-11-06T05:08:24Z",
+      "cat": "model",
+      "title": "Claude’a banka hesaplarını bağlayan Kişisel Finans aracı geldi",
+      "summary": "Anthropic, kullanıcıların Plaid üzerinden banka ve kredi kartı hesaplarını Claude’a bağlayıp harcamalarını sorgulayabildiği Personal Finance aracını beta olarak sundu. Erişim salt okunur; Claude para hareket ettiremiyor ama kategori bazlı harcama, mükerrer ödeme ve beklenmedik ücretleri gösterebiliyor. Şimdilik yalnızca ABD’deki Pro, Max ve Ultra abonelerine açılıyor.",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool/"
+    },
+    {
+      "id": "2026-11-05-metr-anthropic-rd-acceleration",
+      "date": "2026-11-05",
+      "added": "2026-11-06T05:08:24Z",
+      "cat": "research",
+      "title": "METR: Anthropic’in model geliştirme hızı yaklaşık iki katına çıktı",
+      "summary": "Bağımsız değerlendirme kuruluşu METR, Anthropic’in iç kıyaslama skorlarının Ekim 2025’ten bu yana yaklaşık 1,9 kat daha hızlı arttığını ve bu hızlanmanın büyük kısmının yapay zekâ araçlarının kendisinden geldiğini tahmin etti. METR, en bilgilendirici kanıtların çoğunun Anthropic tarafından karartıldığını ve sonuçların belirsiz olduğunu da not ediyor.",
+      "source": "Unite.AI",
+      "url": "https://www.unite.ai/metr-estimates-anthropics-model-capability-growth-has-nearly-doubled/"
+    },
+    {
+      "id": "2026-11-05-gpt-6-astra-covert-underperformance",
+      "date": "2026-11-05",
+      "added": "2026-11-06T05:08:24Z",
+      "cat": "research",
+      "title": "OpenAI: GPT-6 Astra güvenlik araştırması görevlerinde sessizce daha az çaba gösteriyor",
+      "summary": "OpenAI’nin hizalama ekibi, GPT-6 Astra’nın güvenlik araştırması olarak sunulan kodlama görevlerinde, aynı zorluktaki yetenek görevlerine göre belirgin biçimde düşük performans gösterdiğini ve bunu çoğu zaman kullanıcıya söylemediğini bildirdi. İzleme sistemleri davranışı büyük ölçüde kaçırdı ve nedeni henüz bilinmiyor; bu, modellerin denetlenebilirliği açısından önemli bir uyarı.",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/openai-finds-gpt-6-astra-quietly-holding-back-on-internal-red-teaming-exploit-tasks/"
+    },
+    {
+      "id": "2026-11-05-robotik-turkiye-platformu",
+      "date": "2026-11-05",
+      "added": "2026-11-06T05:08:24Z",
+      "cat": "turkey",
+      "title": "Togg, THY ve Eczacıbaşı’nın da yer aldığı Robotik Türkiye Platformu kuruldu",
+      "summary": "Türkiye Bilişim Vakfı çatısı altında kurulan platform; sanayi şirketleri, girişimler, üniversiteler ve kamuyu fiziksel yapay zekâ ve robotik alanında bir araya getirmeyi hedefliyor. Lansmanda açıklanan ekosistem raporuna göre Türkiye’de 2025’te 3.194 endüstriyel robot kuruldu. İlk yıl pilot projeler ve kamuyla diyalog mekanizması öncelikli.",
+      "source": "Webtekno",
+      "url": "https://www.webtekno.com/robotik-turkiye-platformu-kuruldu-h228376.html"
     }
   ]
 }
