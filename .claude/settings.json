@@ -1,11 +1,30 @@
 {
   "permissions": {
+    "defaultMode": "acceptEdits",
+    "additionalDirectories": ["/tmp"],
     "allow": [
       "WebSearch",
       "WebFetch",
+      "Read",
+      "Edit",
+      "Write",
+      "Glob",
+      "Grep",
+      "Bash(node *)",
       "Bash(node scripts/*)",
       "Bash(git *)",
-      "Bash(date *)"
+      "Bash(git show *)",
+      "Bash(date *)",
+      "Bash(cat *)",
+      "Bash(ls *)",
+      "Bash(head *)",
+      "Bash(tail *)",
+      "Bash(grep *)",
+      "Bash(wc *)",
+      "Bash(jq *)",
+      "Bash(mkdir *)",
+      "Bash(cp *)",
+      "Bash(echo *)"
     ]
   }
 }
