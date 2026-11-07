@@ -91,6 +91,16 @@
       "summary": "Türkiye Bilişim Vakfı çatısı altında kurulan platform; sanayi şirketleri, girişimler, üniversiteler ve kamuyu fiziksel yapay zekâ ve robotik alanında bir araya getirmeyi hedefliyor. Lansmanda açıklanan ekosistem raporuna göre Türkiye’de 2025’te 3.194 endüstriyel robot kuruldu. İlk yıl pilot projeler ve kamuyla diyalog mekanizması öncelikli.",
       "source": "Webtekno",
       "url": "https://www.webtekno.com/robotik-turkiye-platformu-kuruldu-h228376.html"
+    },
+    {
+      "id": "2026-11-05-thinking-machines-inkling-2-small",
+      "date": "2026-11-05",
+      "added": "2026-11-07T08:40:23Z",
+      "cat": "model",
+      "title": "Thinking Machines, 594 milyar parametreli Inkling 2 Small modelini tanıttı",
+      "summary": "Model 594 milyar toplam, 17 milyar aktif parametreli bir uzman karışımı (MoE) yapısında ve görsel girdiyi destekliyor. Şimdilik Tinker üzerinden kapalı ağırlıklarla sunuluyor. Şirket, harici güvenlik testleri bitince tam ağırlıkları gelecek hafta Apache 2.0 lisansıyla açmayı planlıyor.",
+      "source": "Thinking Machines",
+      "url": "https://thinkingmachines.ai/news/inkling-2-small/"
     }
   ]
 }
