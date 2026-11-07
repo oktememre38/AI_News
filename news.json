@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked": "2026-11-07T08:52:11Z",
+  "checked": "2026-11-07T08:53:24Z",
   "items": [
     {
       "id": "2026-11-04-chatgpt-images-2-6",
@@ -101,6 +101,16 @@
       "summary": "Model 594 milyar toplam, 17 milyar aktif parametreli bir uzman karışımı (MoE) yapısında ve görsel girdiyi destekliyor. Şimdilik Tinker üzerinden kapalı ağırlıklarla sunuluyor. Şirket, harici güvenlik testleri bitince tam ağırlıkları gelecek hafta Apache 2.0 lisansıyla açmayı planlıyor.",
       "source": "Thinking Machines",
       "url": "https://thinkingmachines.ai/news/inkling-2-small/"
+    },
+    {
+      "id": "2026-11-06-deepmind-rsa-1024-ai-agents",
+      "date": "2026-11-06",
+      "added": "2026-11-07T08:53:24Z",
+      "cat": "research",
+      "title": "DeepMind: Yapay zekâ ajanları eski 1024 bit RSA şemalarında iki yeni zayıflık buldu",
+      "summary": "DeepMind, insan gözetimindeki yapay zekâ ajanlarının eski 1024 bit RSA için iki ilerleme sağladığını duyurdu: imza dolgusunda daha verimli bir saldırı ve çok sayıda anahtarı toplu çarpanlara ayırmada daha ucuz bir algoritma. Sonuçlar yalnızca eskimiş 1024 bit anahtarlar için geçerli; 2048 bit ve üstü etkilenmiyor.",
+      "source": "OfficeChai",
+      "url": "https://officechai.com/ai/google-deepmind-says-it-has-used-ai-agents-to-break-legacy-rsa-1024-encryption-faster-than-anyone-thought-possible/"
     }
   ]
 }
