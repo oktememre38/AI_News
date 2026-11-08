@@ -32,6 +32,8 @@ This job runs unattended, so nothing may wait for an approval:
 
 - `WebSearch` and `WebFetch` are pre-approved for this repo in `.claude/settings.json`, so they never wait for an approval. Prefer fetching URLs that came from a `WebSearch` result or a page you already fetched; don't guess URLs that might not exist.
 - Find pages with `WebSearch`: use the site and topic in the query (e.g. `Anthropic news November 2026`) or the `allowed_domains` filter (e.g. `["anthropic.com"]`), then fetch the result link.
+- **`allowed_domains` takes exactly one domain per search.** A list with several domains is rejected by the proxy with HTTP 400. To cover several sites, run one search per domain. If a filtered search still fails, run the same query once without the filter, with the site name in the query instead (e.g. `openai.com GPT new model November 2026`). Don't count such a failure as an unreadable source unless the unfiltered search also fails.
+- Lab news sites (anthropic.com/news, openai.com/news, blog.google, deepmind.google) are covered by the per-domain searches above; you don't have to open each index page. Open an article only when a search result points to one inside the window.
 - Don't use `curl`, `wget` or scripts to reach websites; the shell can't reach them.
 - If a fetch is refused or needs approval, skip that page and move on; note it in the final summary.
 
@@ -55,7 +57,9 @@ The sites below are where to look (as search terms and `allowed_domains`), not U
 - **research:** huggingface.co/papers (daily trending papers), lab research blogs above, arXiv links that the outlets above or the labs point to.
 - **turkey:** aa.com.tr (bilim-teknoloji), webrazzi.com (yapay zeka), donanimhaber.com, shiftdelete.net, t3vakfi.org, tubitak.gov.tr, cbddo.gov.tr; search in Turkish too (e.g. `yapay zeka Türkiye haber`, `Türkçe dil modeli`).
 
-If a site can't be read (HTTP 403, timeout, DNS failure), move on and note it in the final summary with the exact error.
+If a site can't be read (HTTP 403/4xx, timeout, DNS failure, or a bot check page such as Anubis or Cloudflare), don't retry it. If the page carried a story that may belong on the list, search for the same story on another outlet (the outlets above, or the lab's own page) and use that one; drop the story only if no readable source confirms it. Small blogs and SEO aggregators are never needed as the source. Note unreadable pages in the final summary with the exact error, in one line each.
+
+Thin results are normal, especially for Turkey and research: zero items in a category is fine. For research, `WebFetch https://huggingface.co/papers` (the daily trending list) is allowed directly as a known stable page; for Turkey, also try one-domain searches on `webrazzi.com` and `aa.com.tr`.
 
 ## X (Twitter)
 
