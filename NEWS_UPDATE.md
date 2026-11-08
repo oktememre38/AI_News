@@ -20,7 +20,7 @@ Three categories, in this order of priority:
 
 | `cat` | Covers | Examples of "important" |
 |---|---|---|
-| `model` | Model and product releases | A new model or major version from a major lab (Anthropic, OpenAI, Google/DeepMind, Meta, xAI, Mistral, DeepSeek, Qwen/Alibaba, etc.); a significant open-weight release; major price, limit or availability changes; important new features in ChatGPT, Claude, Gemini, Copilot and similar tools. |
+| `model` | Model and product releases | A new model or major version from a major lab (Anthropic, OpenAI, Google/DeepMind, Meta, xAI, Mistral, DeepSeek, Qwen/Alibaba, Moonshot/Kimi, Zhipu/Z.ai (GLM), MiniMax, Baidu (ERNIE), etc.); a significant open-weight release; major price, limit or availability changes; important new features in ChatGPT, Claude, Gemini, Copilot and similar tools. |
 | `research` | Research | Papers or results that the field is clearly talking about: new state-of-the-art benchmark results, notable new methods, important safety/alignment findings, influential lab research posts. Not every arXiv paper. |
 | `turkey` | AI news from Turkey | Turkish models and products, government AI strategy and regulation in Turkey, notable investments, university and company work from Turkey, global AI services launching or changing in Turkey. Bar is lower here: local relevance is enough. |
 
@@ -39,8 +39,8 @@ This job runs unattended, so nothing may wait for an approval:
 
 Generic queries like `AI news` miss big launches. Run **all** of these searches every time (use today's and yesterday's date, e.g. `November 6 2026`), and read the top results that fall inside the window:
 
-1. One search per major lab, with a launch verb: `OpenAI launches`, `OpenAI announces`, `Anthropic launches Claude`, `Google Gemini launch`, `Google DeepMind announces`, `Meta AI launches`, `xAI Grok release`, `Mistral releases`, `DeepSeek releases`, `Qwen release`, `Microsoft Copilot new model`, `Apple Intelligence update`, `NVIDIA AI model release`. Add the date to each.
-2. Product names in the news: `GPT`, `Claude`, `Gemini`, `Llama`, `Grok` each with `new model` and the date. Also any model or product named in an item already in `news.json` (e.g. an announced or "upcoming" model): search whether it has now launched.
+1. One search per major lab, with a launch verb: `OpenAI launches`, `OpenAI announces`, `Anthropic launches Claude`, `Google Gemini launch`, `Google DeepMind announces`, `Meta AI launches`, `xAI Grok release`, `Mistral releases`, `DeepSeek releases`, `Qwen release`, `Kimi Moonshot release`, `GLM Z.ai release`, `MiniMax release`, `Baidu ERNIE release`, `Microsoft Copilot new model`, `Apple Intelligence update`, `NVIDIA AI model release`. Add the date to each.
+2. Product names in the news: `GPT`, `Claude`, `Gemini`, `Llama`, `Grok`, `Kimi`, `GLM`, `MiniMax`, `ERNIE` each with `new model` and the date. Also any model or product named in an item already in `news.json` (e.g. an announced or "upcoming" model): search whether it has now launched.
 3. Roundups: `AI news today <date>`, `this week in AI <date>`.
 4. Research: `Hugging Face daily papers <date>`, `new AI benchmark state of the art <date>`, `AI safety research <date>`.
 5. Turkey: `yapay zeka haber <tarih>`, `Türkiye yapay zeka <tarih>`, `Türkçe dil modeli`, `yapay zeka Webrazzi`.
@@ -51,7 +51,7 @@ Lab sites (openai.com in particular) often refuse fetches. When the primary sour
 
 The sites below are where to look (as search terms and `allowed_domains`), not URLs to open:
 
-- **model:** anthropic.com/news, openai.com/news, blog.google/technology/ai and deepmind.google/discover/blog, ai.meta.com/blog, mistral.ai/news, x.ai/news, api-docs.deepseek.com/news, qwenlm.github.io/blog; outlets: The Verge (AI), TechCrunch (AI), Ars Technica, VentureBeat (AI), Reuters (technology).
+- **model:** anthropic.com/news, openai.com/news, blog.google/technology/ai and deepmind.google/discover/blog, ai.meta.com/blog, mistral.ai/news, x.ai/news, api-docs.deepseek.com/news, qwenlm.github.io/blog, kimi.ai/blog and moonshot.ai, z.ai/blog, minimax.io/news, yiyan.baidu.com and ernie.baidu.com, huggingface.co (new open-weight model pages); outlets: The Verge (AI), TechCrunch (AI), Ars Technica, VentureBeat (AI), Reuters (technology).
 - **research:** huggingface.co/papers (daily trending papers), lab research blogs above, arXiv links that the outlets above or the labs point to.
 - **turkey:** aa.com.tr (bilim-teknoloji), webrazzi.com (yapay zeka), donanimhaber.com, shiftdelete.net, t3vakfi.org, tubitak.gov.tr, cbddo.gov.tr; search in Turkish too (e.g. `yapay zeka Türkiye haber`, `Türkçe dil modeli`).
 
@@ -61,7 +61,7 @@ If a site can't be read (HTTP 403, timeout, DNS failure), move on and note it in
 
 Labs often announce on X first. X pages can't be fetched (`robots_disallowed`): don't try to open x.com links, and don't use mirrors or other workarounds. Use `WebSearch` with `allowed_domains: ["x.com"]` instead; each result's title carries the post's text and author.
 
-- Every run, search X for the official accounts: `OpenAI`, `OpenAI Developers`, `Anthropic`, `Claude`, `Google DeepMind`, `Google AI`, `Gemini`, `AI at Meta`, `xAI`, `Grok`, `Mistral AI`, `DeepSeek`, `Qwen`, `Microsoft AI`, `NVIDIA AI`, `Hugging Face`, and the leaders who announce launches: Sam Altman (`sama`), Greg Brockman (`gdb`), Dario Amodei, Demis Hassabis, Sundar Pichai, Elon Musk (AI launches only), Mustafa Suleyman. Query e.g. `OpenAI introducing`, `Anthropic introducing`, `Google DeepMind announcing`, with the date.
+- Every run, search X for the official accounts: `OpenAI`, `OpenAI Developers`, `Anthropic`, `Claude`, `Google DeepMind`, `Google AI`, `Gemini`, `AI at Meta`, `xAI`, `Grok`, `Mistral AI`, `DeepSeek`, `Qwen`, `Kimi.ai` / `Moonshot AI`, `Z.ai`, `MiniMax`, `Baidu Inc.`, `Microsoft AI`, `NVIDIA AI`, `Hugging Face`, and the leaders who announce launches: Sam Altman (`sama`), Greg Brockman (`gdb`), Dario Amodei, Demis Hassabis, Sundar Pichai, Elon Musk (AI launches only), Mustafa Suleyman. Query e.g. `OpenAI introducing`, `Anthropic introducing`, `Google DeepMind announcing`, with the date.
 - Get the post's time with `node scripts/xdate.mjs <post URL>` (the ID encodes it) and keep only posts inside the window.
 - **An official account's own launch post is a primary source.** If its full text is in the search result, you may use it: `url` is the post URL, `source` is e.g. `"OpenAI (X)"`, `date` from `xdate.mjs`. If a news outlet or the lab's page has the same story and you can read it, prefer that URL (it has more detail) and use the X post only to find it.
 - Posts from anyone else (leakers, influencers, newsletters, "reportedly") are leads, never sources. Add the story only after you read it from an official account or a reliable outlet.
