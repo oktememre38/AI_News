@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked": "2026-11-09T18:46:59Z",
+  "checked": "2026-11-09T20:46:56Z",
   "items": [
     {
       "id": "2026-11-04-chatgpt-images-2-6",
@@ -121,6 +121,16 @@
       "summary": "Meta Superintelligence Labs, Muse ailesinin en hafif ve en düşük maliyetli modeli Muse Ember’i duyurdu. Metin, görsel ve sesi işleyebiliyor; araç çağırma, yazılım alt görevleri ve uzun belge ayrıştırma için tasarlandı. Girdi fiyatı milyon token başına 0,10 dolar olarak bildirildi.",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/"
+    },
+    {
+      "id": "2026-11-09-claude-fable-mythos-5-2",
+      "date": "2026-11-09",
+      "added": "2026-11-09T20:46:56Z",
+      "cat": "model",
+      "title": "Anthropic, Claude Fable 5.2 ve Mythos 5.2 modellerini yayınladı",
+      "summary": "Anthropic, en zor teknik işler için tasarladığı Fable 5.2'yi tüm ücretli planlara açtı; fiyat milyon token başına 8 dolar girdi, 40 dolar çıktıya düştü ve hızlı mod da eklendi. Siber ve biyoloji alanında sınırsız yetenekli Mythos 5.2 ise yalnızca doğrulanmış kuruluşlara veriliyor.",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/"
     }
   ]
 }
