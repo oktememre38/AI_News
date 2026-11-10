@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked": "2026-11-10T18:46:34Z",
+  "checked": "2026-11-10T20:46:38Z",
   "items": [
     {
       "id": "2026-11-04-chatgpt-images-2-6",
@@ -141,6 +141,16 @@
       "summary": "Google, Gemini 4 ailesinin en güçlü modeli olarak tanıttığı Carbon'un artık erişilebilir olduğunu duyurdu. Model uzun soluklu görevler ve çok adımlı akıl yürütme için tasarlandı; Argon'a göre en zor problemler için konumlanıyor.",
       "source": "Google (X)",
       "url": "https://x.com/Google/status/2120186185423159331"
+    },
+    {
+      "id": "2026-11-10-claude-sheets-whiteboards",
+      "date": "2026-11-10",
+      "added": "2026-11-10T20:46:38Z",
+      "cat": "model",
+      "title": "Claude’a Whiteboards, Sheets ve canlı veri panoları geliyor",
+      "summary": "Anthropic, Claude içinde ekibin birlikte düzenleyebileceği beyaz tahtalar, formüllü tablolar ve veri panoları sunmaya başladı. Özellikler ücretli planlarda beta olarak kademeli açılıyor; paylaşılan duyuruya göre Claude, kısa sürede çalışan bir takipçi tablosu ya da bütçe de hazırlayabiliyor.",
+      "source": "Claude (X)",
+      "url": "https://x.com/claudeai/status/2120206365759094857"
     }
   ]
 }
