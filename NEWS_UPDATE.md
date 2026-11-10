@@ -32,7 +32,7 @@ This job runs unattended, so nothing may wait for an approval:
 
 - `WebSearch` and `WebFetch` are pre-approved for this repo in `.claude/settings.json`, so they never wait for an approval.
 - **Do all the work yourself. Never start subagents** (Agent/Task tool). A subagent starts without your search results, so it guesses URLs, its fetches get refused, and it uses up the run's time.
-- **`WebFetch` only URLs that appeared in a `WebSearch` result or in a page you already fetched in this run.** Never type, guess or build a URL yourself (no index pages like `anthropic.com/news`, no site search pages like `techcrunch.com/?s=...`): those are refused with `PROVENANCE_REQUIRED`. The one exception is `https://huggingface.co/papers` (see below).
+- **`WebFetch` only URLs that appeared in a `WebSearch` result or in a page you already fetched in this run.** Never type, guess or build a URL yourself (no index pages like `anthropic.com/news`, no site search pages like `techcrunch.com/?s=...`, not even `huggingface.co/papers`): those are refused with `PROVENANCE_REQUIRED`. To read a known page, search for it first and fetch the link from the result.
 - **Don't use the `allowed_domains` filter, except `["x.com"]` for X posts.** Put the site name in the query instead (e.g. `The Verge OpenAI new model November 10 2026`). If an `x.com` filtered search fails, skip it; don't retry it.
 - **Send independent searches in parallel**, several in the same turn, not one by one. Fetch only results that look inside the window and possibly important.
 - Lab news index pages don't need to be opened; searches find their articles.
@@ -63,7 +63,7 @@ Use today's date in each query (e.g. `November 10 2026`). Generic queries like `
 
 **Group B, other labs and open weights:** `Microsoft Copilot AI new model <date>`, `Apple Intelligence update <date>`, `NVIDIA AI model release <date>`, `Mistral AI releases <date>`, `Hugging Face new open-weight model <date>`; X: `Mistral AI announcing`, `Microsoft AI NVIDIA AI announcing`, `sama OR Demis Hassabis OR Sundar Pichai AI launch`.
 
-**Group C, research and Turkey:** `WebFetch https://huggingface.co/papers`, `new AI benchmark state of the art <date>`, `AI safety research <date>`; Turkey: `yapay zeka haber <tarih>`, `Türkiye yapay zeka <tarih>`, `Türkçe dil modeli`, `Webrazzi yapay zeka`, `Anadolu Ajansı yapay zeka`.
+**Group C, research and Turkey:** `Hugging Face daily papers <date>` (then fetch the huggingface.co/papers link from the result), `new AI benchmark state of the art <date>`, `AI safety research <date>`; Turkey: `yapay zeka haber <tarih>`, `Türkiye yapay zeka <tarih>`, `Türkçe dil modeli`, `Webrazzi yapay zeka`, `Anadolu Ajansı yapay zeka`.
 
 If a core search turns up a story from a group that isn't scheduled this run (e.g. a DeepSeek launch in a roundup), cover it anyway.
 
@@ -79,7 +79,7 @@ The sites below are where to look (as names to put in search queries), not URLs 
 
 If a site can't be read (HTTP 403/4xx, timeout, DNS failure, or a bot check page such as Anubis or Cloudflare), don't retry it. If the page carried a story that may belong on the list, search for the same story on another outlet (the outlets above, or the lab's own page) and use that one; drop the story only if no readable source confirms it. Small blogs and SEO aggregators are never needed as the source. Note unreadable pages in the final summary with the exact error, in one line each.
 
-Thin results are normal, especially for Turkey and research: zero items in a category is fine. For research, `WebFetch https://huggingface.co/papers` (the daily trending list) is allowed directly as a known stable page; for Turkey, the Webrazzi and Anadolu Ajansı searches in group C cover the main outlets.
+Thin results are normal, especially for Turkey and research: zero items in a category is fine. For research, find the Hugging Face daily papers page through a search (don't type its URL); for Turkey, the Webrazzi and Anadolu Ajansı searches in group C cover the main outlets.
 
 ## X (Twitter)
 
