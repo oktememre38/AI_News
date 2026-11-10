@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked": "2026-11-10T16:47:45Z",
+  "checked": "2026-11-10T18:46:34Z",
   "items": [
     {
       "id": "2026-11-04-chatgpt-images-2-6",
@@ -131,6 +131,16 @@
       "summary": "Anthropic, en zor teknik işler için tasarladığı Fable 5.2'yi tüm ücretli planlara açtı; fiyat milyon token başına 8 dolar girdi, 40 dolar çıktıya düştü ve hızlı mod da eklendi. Siber ve biyoloji alanında sınırsız yetenekli Mythos 5.2 ise yalnızca doğrulanmış kuruluşlara veriliyor.",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/"
+    },
+    {
+      "id": "2026-11-10-gemini-4-carbon",
+      "date": "2026-11-10",
+      "added": "2026-11-10T18:46:34Z",
+      "cat": "model",
+      "title": "Google, en güçlü modeli Gemini 4 Carbon'u kullanıma açtı",
+      "summary": "Google, Gemini 4 ailesinin en güçlü modeli olarak tanıttığı Carbon'un artık erişilebilir olduğunu duyurdu. Model uzun soluklu görevler ve çok adımlı akıl yürütme için tasarlandı; Argon'a göre en zor problemler için konumlanıyor.",
+      "source": "Google (X)",
+      "url": "https://x.com/Google/status/2120186185423159331"
     }
   ]
 }
