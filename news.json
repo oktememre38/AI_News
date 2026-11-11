@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked": "2026-11-11T06:47:58Z",
+  "checked": "2026-11-11T10:48:00Z",
   "items": [
     {
       "id": "2026-11-04-chatgpt-images-2-6",
@@ -161,6 +161,16 @@
       "summary": "DeepMind’ın resmi paylaşımına göre yeni robotik model yüzlerce gündelik beceriyi öğrenebiliyor; çamaşır katlama, pasta servis etme ve fabrikada otomobil parçası ayıklama gibi işleri yapabiliyor. Model, Gemini ailesinin fiziksel dünyadaki ajan yeteneklerini bir adım ileri taşıyor.",
       "source": "Google DeepMind (X)",
       "url": "https://x.com/GoogleDeepMind/status/2120169787896525104"
+    },
+    {
+      "id": "2026-11-10-minimax-h3-image",
+      "date": "2026-11-10",
+      "added": "2026-11-11T10:48:00Z",
+      "cat": "model",
+      "title": "MiniMax, açık ağırlıklı görsel üretim modeli H3-Image’ı yayınladı",
+      "summary": "MiniMax, 16 milyon piksellik (4K) görselleri yaklaşık 10 saniyede üreten H3-Image modelini duyurdu. Model tek istekte 16 referans görseli destekliyor ve ağırlıkları açık; API, MiniMax Code ve Hailuo AI üzerinden de kullanılabiliyor.",
+      "source": "MiniMax (X)",
+      "url": "https://x.com/MiniMax_AI/status/2120179737695826420"
     }
   ]
 }
