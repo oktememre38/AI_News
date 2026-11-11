@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked": "2026-11-11T14:47:29Z",
+  "checked": "2026-11-11T16:47:00Z",
   "items": [
     {
       "id": "2026-11-04-chatgpt-images-2-6",
@@ -171,6 +171,16 @@
       "summary": "MiniMax, 16 milyon piksellik (4K) görselleri yaklaşık 10 saniyede üreten H3-Image modelini duyurdu. Model tek istekte 16 referans görseli destekliyor ve ağırlıkları açık; API, MiniMax Code ve Hailuo AI üzerinden de kullanılabiliyor.",
       "source": "MiniMax (X)",
       "url": "https://x.com/MiniMax_AI/status/2120179737695826420"
+    },
+    {
+      "id": "2026-11-10-deepmind-alphaproof-code-signal",
+      "date": "2026-11-10",
+      "added": "2026-11-11T16:47:00Z",
+      "cat": "research",
+      "title": "DeepMind, Signal protokolünün makine kodunun güvenlik özelliklerini yapay zekâyla doğruladı",
+      "summary": "Google DeepMind'dan Pushmeet Kohli, ekibinin Signal mesajlaşma protokolünün altındaki makine kodunun temel güvenlik özelliklerini biçimsel olarak kanıtladığını duyurdu. Yaygın kullanılan bir protokolün gerçek üretim kodunun ilk kez biçimsel doğrulanması olarak sunuluyor.",
+      "source": "Pushmeet Kohli (X)",
+      "url": "https://x.com/pushmeet/status/2120127611137634376"
     }
   ]
 }
