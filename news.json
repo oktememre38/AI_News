@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked": "2026-11-10T20:46:38Z",
+  "checked": "2026-11-11T05:06:12Z",
   "items": [
     {
       "id": "2026-11-04-chatgpt-images-2-6",
@@ -151,6 +151,16 @@
       "summary": "Anthropic, Claude içinde ekibin birlikte düzenleyebileceği beyaz tahtalar, formüllü tablolar ve veri panoları sunmaya başladı. Özellikler ücretli planlarda beta olarak kademeli açılıyor; paylaşılan duyuruya göre Claude, kısa sürede çalışan bir takipçi tablosu ya da bütçe de hazırlayabiliyor.",
       "source": "Claude (X)",
       "url": "https://x.com/claudeai/status/2120206365759094857"
+    },
+    {
+      "id": "2026-11-10-gemini-robotics-2-5",
+      "date": "2026-11-10",
+      "added": "2026-11-11T05:06:12Z",
+      "cat": "model",
+      "title": "Google DeepMind, fiziksel yapay zekâ modeli Gemini Robotics 2.5’i duyurdu",
+      "summary": "DeepMind’ın resmi paylaşımına göre yeni robotik model yüzlerce gündelik beceriyi öğrenebiliyor; çamaşır katlama, pasta servis etme ve fabrikada otomobil parçası ayıklama gibi işleri yapabiliyor. Model, Gemini ailesinin fiziksel dünyadaki ajan yeteneklerini bir adım ileri taşıyor.",
+      "source": "Google DeepMind (X)",
+      "url": "https://x.com/GoogleDeepMind/status/2120169787896525104"
     }
   ]
 }
