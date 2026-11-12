@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked": "2026-11-12T04:50:56Z",
+  "checked": "2026-11-12T06:47:22Z",
   "items": [
     {
       "id": "2026-11-04-chatgpt-images-2-6",
@@ -191,6 +191,16 @@
       "summary": "Gemini Decisions API, metin üretmek yerine tek geçişte en fazla 1.000 kapalı uçlu soruyu puanlayan yeni Gemini Decision 1 modeline dayanıyor. Metin, görsel, ses, video ve PDF girdilerini destekliyor; 256 bin bağlam penceresi var ve 1 milyon girdi token’ı 0,10 dolar. Google AI Studio’da ücretsiz denenebiliyor.",
       "source": "Google (X)",
       "url": "https://x.com/sundarpichai/status/2120581155078729728"
+    },
+    {
+      "id": "2026-11-11-alphagenome-2",
+      "date": "2026-11-11",
+      "added": "2026-11-12T06:47:22Z",
+      "cat": "research",
+      "title": "DeepMind, DNA dizilimi modeli AlphaGenome 2'yi duyurdu",
+      "summary": "Demis Hassabis, DNA varyantlarının hastalıklarla ilişkili etkilerini farklı hücre tiplerine göre tahmin eden AlphaGenome 2 modelini duyurdu. Model, karmaşık hastalıkların anlaşılmasına katkı sağlamayı hedefliyor ve akademik araştırma için API üzerinden erişime açık.",
+      "source": "Demis Hassabis (X)",
+      "url": "https://x.com/demishassabis/status/2120565316619284734"
     }
   ]
 }
