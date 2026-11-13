@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked": "2026-11-13T16:51:17Z",
+  "checked": "2026-11-13T18:46:56Z",
   "items": [
     {
       "id": "2026-11-04-chatgpt-images-2-6",
@@ -221,6 +221,16 @@
       "summary": "Anthropic, Claude’u görüntülü görüşmeye ekleyip toplantı sürerken belge, beyaz tahta ve benzeri çıktılar hazırlatmayı sağlayan Claude Meetings özelliğini duyurdu. Özellik Team ve Enterprise planlarında beta olarak kademeli şekilde açılıyor.",
       "source": "Claude (X)",
       "url": "https://x.com/claudeai/status/2120973994191094179"
+    },
+    {
+      "id": "2026-11-12-claude-managed-agents-self-hosted",
+      "date": "2026-11-12",
+      "added": "2026-11-13T18:46:56Z",
+      "cat": "model",
+      "title": "Claude Managed Agents kendi altyapınızda çalıştırılabilecek: özel beta başladı",
+      "summary": "Anthropic, Claude Managed Agents için kendi kendine barındırma seçeneğini özel beta olarak açtı. Kurumlar ajan altyapısını, kum havuzlarını ve oturum geçmişini kendi bulutlarında ya da şirket içinde tutabiliyor; Claude'a giden isteklerin nereye yönlendirileceğini de seçebiliyor.",
+      "source": "ClaudeDevs (X)",
+      "url": "https://x.com/ClaudeDevs/status/2120938988165091693"
     }
   ]
 }
