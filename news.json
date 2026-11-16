@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked": "2026-11-16T14:47:07Z",
+  "checked": "2026-11-16T16:46:46Z",
   "items": [
     {
       "id": "2026-11-04-chatgpt-images-2-6",
@@ -231,6 +231,16 @@
       "summary": "Anthropic, Claude Managed Agents için kendi kendine barındırma seçeneğini özel beta olarak açtı. Kurumlar ajan altyapısını, kum havuzlarını ve oturum geçmişini kendi bulutlarında ya da şirket içinde tutabiliyor; Claude'a giden isteklerin nereye yönlendirileceğini de seçebiliyor.",
       "source": "ClaudeDevs (X)",
       "url": "https://x.com/ClaudeDevs/status/2120938988165091693"
+    },
+    {
+      "id": "2026-11-16-qwen4-max",
+      "date": "2026-11-16",
+      "added": "2026-11-16T16:46:46Z",
+      "cat": "model",
+      "title": "Alibaba, yeni mimarili ve görsel destekli Qwen4-Max modelini yayınladı",
+      "summary": "Qwen4-Max yeni bir MoE mimarisine, yerleşik görsel anlamaya ve 1 milyon token bağlam penceresine sahip. Alibaba, modelin Qwen3.8-Max'e göre yaklaşık yüzde 50 daha az token harcadığını ve görev başına maliyeti yüzde 60'tan fazla düşürdüğünü söylüyor; model OpenRouter'da da kullanıma açıldı.",
+      "source": "Qwen (X)",
+      "url": "https://x.com/Alibaba_Qwen/status/2122148127520289151"
     }
   ]
 }
