@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked": "2026-11-17T04:46:36Z",
+  "checked": "2026-11-17T06:47:53Z",
   "items": [
     {
       "id": "2026-11-04-chatgpt-images-2-6",
@@ -241,6 +241,16 @@
       "summary": "Qwen4-Max yeni bir MoE mimarisine, yerleşik görsel anlamaya ve 1 milyon token bağlam penceresine sahip. Alibaba, modelin Qwen3.8-Max'e göre yaklaşık yüzde 50 daha az token harcadığını ve görev başına maliyeti yüzde 60'tan fazla düşürdüğünü söylüyor; model OpenRouter'da da kullanıma açıldı.",
       "source": "Qwen (X)",
       "url": "https://x.com/Alibaba_Qwen/status/2122148127520289151"
+    },
+    {
+      "id": "2026-11-16-openai-scientists-free-access",
+      "date": "2026-11-16",
+      "added": "2026-11-17T06:47:53Z",
+      "cat": "model",
+      "title": "OpenAI, 200 bin bilim insanına öncü modellerine ücretsiz erişim sunacak",
+      "summary": "OpenAI, dünya genelinde 200 bine kadar bilim insanına eğitim ve destekle birlikte öncü modellerine ücretsiz erişim programı açtı. Başvurular 23 Kasım’da başlıyor; programda paylaşılan veriler varsayılan olarak model eğitiminde kullanılmayacak.",
+      "source": "OpenAI (X)",
+      "url": "https://x.com/OpenAI/status/2122377585523126615"
     }
   ]
 }
