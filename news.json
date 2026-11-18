@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked": "2026-11-18T04:50:00Z",
+  "checked": "2026-11-18T06:47:47Z",
   "items": [
     {
       "id": "2026-11-04-chatgpt-images-2-6",
@@ -261,6 +261,16 @@
       "summary": "OpenAI, karmaşık profesyonel işler için Astra’nın ve gündelik işler için Sol’un 6.2 sürümlerini Codex ile API’de kullanıma sundu. Şirkete göre Astra, bilimsel terminal görevlerinde GPT-6 Astra’dan 9 puan yüksek sonuç alıyor ve maliyeti üçte birinden az.",
       "source": "OpenAI Developers (X)",
       "url": "https://x.com/OpenAIDevs/status/2122752488558522852"
+    },
+    {
+      "id": "2026-11-17-microsoft-mai-ignite-models",
+      "date": "2026-11-17",
+      "added": "2026-11-18T06:47:47Z",
+      "cat": "model",
+      "title": "Microsoft, Ignite’ta kodlama ve siber güvenlik odaklı yeni MAI modellerini tanıttı",
+      "summary": "Microsoft, Ignite etkinliğinde kendi geliştirdiği yeni MAI model ailesini duyurdu; kodlama ve siber güvenlik gibi alanlara yönelik modeller OpenAI ve Anthropic’e göre çok daha düşük maliyet vaat ediyor. Şirket, MAI Code 2’nin Claude Opus 5.5’in işinin büyük kısmını çok daha ucuza yaptığını öne sürüyor.",
+      "source": "Reuters",
+      "url": "https://www.investing.com/news/stock-market-news/microsoft-unveils-ai-models-for-coding-cybersecurity-as-it-takes-on-anthropic-openai-5033766"
     }
   ]
 }
