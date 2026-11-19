@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked": "2026-11-18T20:46:54Z",
+  "checked": "2026-11-19T04:46:53Z",
   "items": [
     {
       "id": "2026-11-04-chatgpt-images-2-6",
@@ -271,6 +271,16 @@
       "summary": "Microsoft, Ignite etkinliğinde kendi geliştirdiği yeni MAI model ailesini duyurdu; kodlama ve siber güvenlik gibi alanlara yönelik modeller OpenAI ve Anthropic’e göre çok daha düşük maliyet vaat ediyor. Şirket, MAI Code 2’nin Claude Opus 5.5’in işinin büyük kısmını çok daha ucuza yaptığını öne sürüyor.",
       "source": "Reuters",
       "url": "https://www.investing.com/news/stock-market-news/microsoft-unveils-ai-models-for-coding-cybersecurity-as-it-takes-on-anthropic-openai-5033766"
+    },
+    {
+      "id": "2026-11-18-gemini-4-neon",
+      "date": "2026-11-18",
+      "added": "2026-11-19T04:46:53Z",
+      "cat": "model",
+      "title": "Google, Gemini 4 Neon modelini kullanıma sundu",
+      "summary": "Google DeepMind, Carbon ile Hydrogen arasında konumlanan Gemini 4 Neon'u yayına aldı. Model karmaşık yazılım geliştirme, bilgi işi ve bilim iş akışlarında hızlı ve uçtan uca görev tamamlamaya odaklanıyor; Google AI Studio ve API üzerinden erişilebiliyor.",
+      "source": "Google (X)",
+      "url": "https://x.com/GoogleDeepMind/status/2123167884411077030"
     }
   ]
 }
