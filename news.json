@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked": "2026-11-20T10:46:36Z",
+  "checked": "2026-11-20T12:47:21Z",
   "items": [
     {
       "id": "2026-11-04-chatgpt-images-2-6",
@@ -291,6 +291,16 @@
       "summary": "Google, Mac'teki Gemini uygulamasına klasörler, uygulamalar ve web üzerinde görev devretmeyi sağlayan bilgisayar kullanımı özelliğini getirdi. Gemini arka planda canlı bir pencerede tıklayıp yazarken ekran ve imleç kullanıcıda kalıyor. Örnek olarak bir çizimden Blender'da 3B model üretildi.",
       "source": "Gemini (X)",
       "url": "https://x.com/GeminiApp/status/2123513203745538423"
+    },
+    {
+      "id": "2026-11-18-genie-4-project-genie",
+      "date": "2026-11-18",
+      "added": "2026-11-20T12:47:21Z",
+      "cat": "model",
+      "title": "Google DeepMind, Genie 4 dünya modelini Project Genie’de kullanıma açtı",
+      "summary": "Ekim sonunda araştırma önizlemesi olarak duyurulan Genie 4 artık Project Genie içinde uygun Google AI Ultra aboneleri için erişilebilir. Model yerel ses, gerçek zamanlı sahne düzenleme ve etkileşimli dünyalar kurmaya yardım eden yeni bir ajan sunuyor.",
+      "source": "Google DeepMind (X)",
+      "url": "https://x.com/GoogleDeepMind/status/2123117733709586849"
     }
   ]
 }
