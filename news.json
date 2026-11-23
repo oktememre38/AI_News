@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked": "2026-11-23T10:46:51Z",
+  "checked": "2026-11-23T12:48:30Z",
   "items": [
     {
       "id": "2026-11-04-chatgpt-images-2-6",
@@ -301,6 +301,16 @@
       "summary": "Ekim sonunda araştırma önizlemesi olarak duyurulan Genie 4 artık Project Genie içinde uygun Google AI Ultra aboneleri için erişilebilir. Model yerel ses, gerçek zamanlı sahne düzenleme ve etkileşimli dünyalar kurmaya yardım eden yeni bir ajan sunuyor.",
       "source": "Google DeepMind (X)",
       "url": "https://x.com/GoogleDeepMind/status/2123117733709586849"
+    },
+    {
+      "id": "2026-11-23-glm-5-4-loop-transformer",
+      "date": "2026-11-23",
+      "added": "2026-11-23T12:48:30Z",
+      "cat": "model",
+      "title": "Z.ai, döngülü Transformer mimarili GLM-5.4 modelini yayınladı",
+      "summary": "Z.ai, katmanlarını iki kez çalıştıran ilk döngülü Transformer modeli GLM-5.4'ü çıkardı. 750 milyar parametreli model görsel girdi desteği ve daha güçlü kodlama performansı getiriyor; GLM Coding Plan kullanıcılarına bugünden itibaren açıldı.",
+      "source": "The Next Web",
+      "url": "https://thenextweb.com/news/zai-glm-5-4-loop-transformer-coding-model"
     }
   ]
 }
