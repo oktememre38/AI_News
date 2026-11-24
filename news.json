@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked": "2026-11-24T12:47:08Z",
+  "checked": "2026-11-24T14:46:42Z",
   "items": [
     {
       "id": "2026-11-04-chatgpt-images-2-6",
@@ -341,6 +341,16 @@
       "summary": "Meta, Muse ajanını Birleşik Krallık’taki yetişkin kullanıcılara sundu; Politico’ya göre bu, büyük bir teknoloji şirketinin ülkede çıkardığı ilk yapay zekâ ajanı ürünü. Ajan alışveriş ve seyahat gibi günlük işleri üstlenebiliyor, satın alma denetimleri ve perakende ortaklıkları da lansmana eşlik ediyor.",
       "source": "Unite.AI",
       "url": "https://www.unite.ai/meta-brings-muse-personal-ai-agent-to-uk-with-purchase-controls/"
+    },
+    {
+      "id": "2026-11-23-deepmind-gemini-agents-quantum",
+      "date": "2026-11-23",
+      "added": "2026-11-24T14:46:42Z",
+      "cat": "research",
+      "title": "DeepMind, Gemini 4 ajan ekipleriyle kuantum algoritmalarının maliyetini ciddi biçimde düşürdü",
+      "summary": "Google DeepMind, Gemini 4 ajanlarından oluşan ekiplerle yeni kuantum devreleri tasarladı; füzyon enerjisi, kimya ve ilaç keşfi simülasyonlarının gelecekteki maliyetini kayda değer ölçüde azalttığını duyurdu. Bulunan iyileştirmeler Lean ile biçimsel olarak doğrulandı.",
+      "source": "The Next Web",
+      "url": "https://thenextweb.com/news/google-deepmind-gemini-agents-quantum-algorithms-lean"
     }
   ]
 }
