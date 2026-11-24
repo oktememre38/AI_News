@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked": "2026-11-24T04:46:32Z",
+  "checked": "2026-11-24T06:47:14Z",
   "items": [
     {
       "id": "2026-11-04-chatgpt-images-2-6",
@@ -321,6 +321,16 @@
       "summary": "Claude Ship, geliştiricinin PR'ını açıp inceliyor, geri bildirimlere ve başarısız kontrollere göre düzeltme yapıyor. Ekibin izin verdiği PR'ları onaylayabiliyor; birleştirme yetkisini yine mevcut izin ve dal kuralları belirliyor. Claude Code CLI ve masaüstü uygulamasında /ship komutuyla açılıyor.",
       "source": "9to5Mac",
       "url": "https://9to5mac.com/2026/11/23/anthropic-launches-new-claude-ship-feature-for-builders/"
+    },
+    {
+      "id": "2026-11-23-chatgpt-gpt-6-2-sol-chat",
+      "date": "2026-11-23",
+      "added": "2026-11-24T06:47:14Z",
+      "cat": "model",
+      "title": "ChatGPT’in sohbet sekmesine GPT-6.2 Sol geliyor, GPT-5.6 Sol 23 Aralık’ta emekliye ayrılıyor",
+      "summary": "OpenAI, sohbete göre ayarlanmış GPT-6.2 Sol modelini ChatGPT’nin Chat sekmesinde kullanıma açmaya başladı; model fiyat düşüşü takibi gibi önerilerde de bulunabiliyor. Şirket aynı duyuruda GPT-5.6 Sol’un 23 Aralık’ta ChatGPT’den kaldırılacağını açıkladı.",
+      "source": "9to5Mac",
+      "url": "https://9to5mac.com/2026/11/23/chatgpt-expands-gpt-6-2-sol-as-openai-sets-retirement-date-for-two-models/"
     }
   ]
 }
