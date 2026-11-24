@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked": "2026-11-24T18:46:28Z",
+  "checked": "2026-11-24T20:46:44Z",
   "items": [
     {
       "id": "2026-11-04-chatgpt-images-2-6",
@@ -351,6 +351,16 @@
       "summary": "Google DeepMind, Gemini 4 ajanlarından oluşan ekiplerle yeni kuantum devreleri tasarladı; füzyon enerjisi, kimya ve ilaç keşfi simülasyonlarının gelecekteki maliyetini kayda değer ölçüde azalttığını duyurdu. Bulunan iyileştirmeler Lean ile biçimsel olarak doğrulandı.",
       "source": "The Next Web",
       "url": "https://thenextweb.com/news/google-deepmind-gemini-agents-quantum-algorithms-lean"
+    },
+    {
+      "id": "2026-11-24-vp-vnp-proof-claude-openai",
+      "date": "2026-11-24",
+      "added": "2026-11-24T20:46:44Z",
+      "cat": "research",
+      "title": "Anthropic ve OpenAI, VP ≠ VNP varsayımı için yapay zekâ yazımı rakip ispatlar yayımladı",
+      "summary": "Anthropic, Claude'un yazdığı ve Lean ile biçimselleştirilmiş yaklaşık 73 bin satırlık bir VP ≠ VNP ispatını yayımladı. Saatler sonra OpenAI de kendi ispatını paylaşıp sonucu iki hafta önce elde ettiğini söyledi. İspatlar henüz matematikçiler tarafından bağımsız doğrulanmadı.",
+      "source": "OfficeChai",
+      "url": "https://officechai.com/ai/openai-vp-vnp-proof-hours-after-anthropic-claude/"
     }
   ]
 }
