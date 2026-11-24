@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked": "2026-11-24T06:47:14Z",
+  "checked": "2026-11-24T08:50:00Z",
   "items": [
     {
       "id": "2026-11-04-chatgpt-images-2-6",
@@ -331,6 +331,16 @@
       "summary": "OpenAI, sohbete göre ayarlanmış GPT-6.2 Sol modelini ChatGPT’nin Chat sekmesinde kullanıma açmaya başladı; model fiyat düşüşü takibi gibi önerilerde de bulunabiliyor. Şirket aynı duyuruda GPT-5.6 Sol’un 23 Aralık’ta ChatGPT’den kaldırılacağını açıkladı.",
       "source": "9to5Mac",
       "url": "https://9to5mac.com/2026/11/23/chatgpt-expands-gpt-6-2-sol-as-openai-sets-retirement-date-for-two-models/"
+    },
+    {
+      "id": "2026-11-24-meta-muse-uk-launch",
+      "date": "2026-11-24",
+      "added": "2026-11-24T08:50:00Z",
+      "cat": "model",
+      "title": "Meta, kişisel yapay zekâ ajanı Muse’u Birleşik Krallık’ta kullanıma açtı",
+      "summary": "Meta, Muse ajanını Birleşik Krallık’taki yetişkin kullanıcılara sundu; Politico’ya göre bu, büyük bir teknoloji şirketinin ülkede çıkardığı ilk yapay zekâ ajanı ürünü. Ajan alışveriş ve seyahat gibi günlük işleri üstlenebiliyor, satın alma denetimleri ve perakende ortaklıkları da lansmana eşlik ediyor.",
+      "source": "Unite.AI",
+      "url": "https://www.unite.ai/meta-brings-muse-personal-ai-agent-to-uk-with-purchase-controls/"
     }
   ]
 }
