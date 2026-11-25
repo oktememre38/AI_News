@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked": "2026-11-25T04:47:51Z",
+  "checked": "2026-11-25T06:47:31Z",
   "items": [
     {
       "id": "2026-11-04-chatgpt-images-2-6",
@@ -361,6 +361,26 @@
       "summary": "Anthropic, Claude'un yazdığı ve Lean ile biçimselleştirilmiş yaklaşık 73 bin satırlık bir VP ≠ VNP ispatını yayımladı. Saatler sonra OpenAI de kendi ispatını paylaşıp sonucu iki hafta önce elde ettiğini söyledi. İspatlar henüz matematikçiler tarafından bağımsız doğrulanmadı.",
       "source": "OfficeChai",
       "url": "https://officechai.com/ai/openai-vp-vnp-proof-hours-after-anthropic-claude/"
+    },
+    {
+      "id": "2026-11-24-openai-matrix-multiplication-9-4",
+      "date": "2026-11-24",
+      "added": "2026-11-25T06:47:31Z",
+      "cat": "research",
+      "title": "OpenAI, matris çarpımı üssünün tam olarak 9/4 olduğunu savunan ön baskı yayımladı",
+      "summary": "OpenAI, matris çarpımının hız sınırını belirleyen ω üssünün tam olarak 9/4 olduğunu öne süren uzun bir ön baskı paylaştı. İddia doğrulanırsa algoritma teorisinin köklü bir açık sorusunu kapatacak; sonuç henüz hakem değerlendirmesinden geçmedi.",
+      "source": "Unite.AI",
+      "url": "https://www.unite.ai/openai-preprint-reports-9-4-bound-for-matrix-multiplication/"
+    },
+    {
+      "id": "2026-11-25-baidu-ernie-5-5-flash-weights",
+      "date": "2026-11-25",
+      "added": "2026-11-25T06:47:31Z",
+      "cat": "model",
+      "title": "Baidu, ERNIE 5.5 Flash Preview modelinin ağırlıklarını açtı",
+      "summary": "Baidu, daha önce yalnızca API ile sunduğu 280 milyar parametreli, bir milyon token bağlamlı ERNIE 5.5 Flash Preview modelinin ağırlıklarını söz verdiği gün indirmeye açtı. Model açık ağırlıklı ERNIE ailesinin son üyesi.",
+      "source": "TechNode",
+      "url": "https://technode.com/2026/11/25/baidu-opens-ernie-5-5-flash-preview-weights-with-million-token-context/"
     }
   ]
 }
