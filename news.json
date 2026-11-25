@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked": "2026-11-25T06:47:31Z",
+  "checked": "2026-11-25T08:46:38Z",
   "items": [
     {
       "id": "2026-11-04-chatgpt-images-2-6",
@@ -381,6 +381,26 @@
       "summary": "Baidu, daha önce yalnızca API ile sunduğu 280 milyar parametreli, bir milyon token bağlamlı ERNIE 5.5 Flash Preview modelinin ağırlıklarını söz verdiği gün indirmeye açtı. Model açık ağırlıklı ERNIE ailesinin son üyesi.",
       "source": "TechNode",
       "url": "https://technode.com/2026/11/25/baidu-opens-ernie-5-5-flash-preview-weights-with-million-token-context/"
+    },
+    {
+      "id": "2026-11-23-claude-plugins-unified",
+      "date": "2026-11-23",
+      "added": "2026-11-25T08:46:38Z",
+      "cat": "model",
+      "title": "Claude’da bağlayıcılar ve beceriler “eklentiler” altında birleşti",
+      "summary": "Anthropic, Claude’un araç bağlayıcılarını ve becerilerini tek bir eklenti sistemi altında topladı. 10 binden fazla eklentilik dizin Free, Pro, Max ve Ultra planlarında açık; Team ve Enterprise planları sonra gelecek.",
+      "source": "Claude (X)",
+      "url": "https://x.com/claudeai/status/2124970294523945328"
+    },
+    {
+      "id": "2026-11-24-mcp-skills-tasks",
+      "date": "2026-11-24",
+      "added": "2026-11-25T08:46:38Z",
+      "cat": "model",
+      "title": "MCP iki yaşında: Skills over MCP ve Tasks özellikleri Claude’a geliyor",
+      "summary": "Anthropic, Model Context Protocol’ün ikinci yıldönümünde protokolün ajanların birbiriyle iletişimini ve iş dağıtımını standartlaştırmaya doğru evrildiğini duyurdu. Claude’a MCP üzerinden beceri aktarımı ve uzun süren görevleri yöneten Tasks desteği getiriliyor.",
+      "source": "ClaudeDevs (X)",
+      "url": "https://x.com/ClaudeDevs/status/2125289794871963935"
     }
   ]
 }
