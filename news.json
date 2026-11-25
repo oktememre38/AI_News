@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked": "2026-11-25T14:46:28Z",
+  "checked": "2026-11-25T16:47:56Z",
   "items": [
     {
       "id": "2026-11-04-chatgpt-images-2-6",
@@ -421,6 +421,16 @@
       "summary": "Meta, Muse asistanını doğrudan Instagram mesajlaşma ekranına entegre etti. Asistan, kullanıcıların günlük sohbet akışının içinde erişilebilir hale geldi; bu, Muse’un Birleşik Krallık lansmanının ardından gelen yeni bir dağıtım adımı.",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/"
+    },
+    {
+      "id": "2026-11-24-claude-artifacts-desktop-apps",
+      "date": "2026-11-24",
+      "added": "2026-11-25T16:47:56Z",
+      "cat": "model",
+      "title": "Claude’da oluşturulan artifact’lar artık Mac ve Windows uygulaması olarak kurulabiliyor",
+      "summary": "Anthropic, Claude’a yaptırılan artifact’ların tek tıkla “uygulama olarak yükle” seçeneğiyle Mac ve Windows’a masaüstü uygulaması gibi kurulmasını sağladı. Kurulan uygulamalar bağlayıcıları kullanabiliyor, izin verilirse bildirim gönderip menü çubuğuna simge ekleyebiliyor; bu, Claude’u kişisel araç üretme platformuna yaklaştırıyor.",
+      "source": "SiliconANGLE",
+      "url": "https://siliconangle.com/2026/11/24/anthropic-is-trying-to-kill-traditional-desktop-apps-with-claude-generated-desktop-apps/"
     }
   ]
 }
