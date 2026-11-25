@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked": "2026-11-25T12:47:41Z",
+  "checked": "2026-11-25T14:46:28Z",
   "items": [
     {
       "id": "2026-11-04-chatgpt-images-2-6",
@@ -401,6 +401,26 @@
       "summary": "Anthropic, Model Context Protocol’ün ikinci yıldönümünde protokolün ajanların birbiriyle iletişimini ve iş dağıtımını standartlaştırmaya doğru evrildiğini duyurdu. Claude’a MCP üzerinden beceri aktarımı ve uzun süren görevleri yöneten Tasks desteği getiriliyor.",
       "source": "ClaudeDevs (X)",
       "url": "https://x.com/ClaudeDevs/status/2125289794871963935"
+    },
+    {
+      "id": "2026-11-25-google-cogentic-math-papers",
+      "date": "2026-11-25",
+      "added": "2026-11-25T14:46:28Z",
+      "cat": "research",
+      "title": "Google’in Cogentic ajanı tek günde altı matematik makalesi yayımladı",
+      "summary": "Gemini 4 üzerinde çalışan Cogentic ajanının ilk istemden sonra insan müdahalesi olmadan yazdığı bildirilen altı makale yayımlandı. Biri, tamsayı çarpanlarına ayırmada hızlı bir algoritmanın ispatını iddia ediyor. Makaleler henüz hakem değerlendirmesinden geçmedi.",
+      "source": "OfficeChai",
+      "url": "https://officechai.com/ai/googles-cogentic-ai-releases-six-math-papers-in-one-day-including-a-proven-fast-algorithm-for-factoring-numbers/"
+    },
+    {
+      "id": "2026-11-24-meta-muse-instagram-dm",
+      "date": "2026-11-24",
+      "added": "2026-11-25T14:46:28Z",
+      "cat": "model",
+      "title": "Meta, Muse yapay zekâ asistanını Instagram mesajlarına getirdi",
+      "summary": "Meta, Muse asistanını doğrudan Instagram mesajlaşma ekranına entegre etti. Asistan, kullanıcıların günlük sohbet akışının içinde erişilebilir hale geldi; bu, Muse’un Birleşik Krallık lansmanının ardından gelen yeni bir dağıtım adımı.",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/"
     }
   ]
 }
