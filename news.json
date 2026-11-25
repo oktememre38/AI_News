@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked": "2026-11-25T18:48:16Z",
+  "checked": "2026-11-25T20:48:10Z",
   "items": [
     {
       "id": "2026-11-04-chatgpt-images-2-6",
@@ -431,6 +431,16 @@
       "summary": "Anthropic, Claude’a yaptırılan artifact’ların tek tıkla “uygulama olarak yükle” seçeneğiyle Mac ve Windows’a masaüstü uygulaması gibi kurulmasını sağladı. Kurulan uygulamalar bağlayıcıları kullanabiliyor, izin verilirse bildirim gönderip menü çubuğuna simge ekleyebiliyor; bu, Claude’u kişisel araç üretme platformuna yaklaştırıyor.",
       "source": "SiliconANGLE",
       "url": "https://siliconangle.com/2026/11/24/anthropic-is-trying-to-kill-traditional-desktop-apps-with-claude-generated-desktop-apps/"
+    },
+    {
+      "id": "2026-11-25-chatgpt-chat-work-merge-limits",
+      "date": "2026-11-25",
+      "added": "2026-11-25T20:48:10Z",
+      "cat": "model",
+      "title": "ChatGPT’te Chat ve Work sekmeleri birleşiyor, kullanım limitleri ortaklaşıyor",
+      "summary": "OpenAI, ChatGPT’in Chat ve Work deneyimlerini tek çatıda topluyor; Aralık’tan itibaren ChatGPT ve Codex kullanımı ortak bir kotadan düşülecek. Şirket, yoğun kullanıcıların bu değişiklikle limitlere daha erken ulaşabileceğini kabul ediyor; bu da ücretli planlardaki kullanım hesabını doğrudan etkiliyor.",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/"
     }
   ]
 }
