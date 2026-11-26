@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked": "2026-11-26T14:48:23Z",
+  "checked": "2026-11-26T16:48:04Z",
   "items": [
     {
       "id": "2026-11-04-chatgpt-images-2-6",
@@ -451,6 +451,16 @@
       "summary": "OpenAI, GPT-6 ailesinin özel bir biyoloji aracı olmadan yalnızca akıl yürütme ve kod yazarak protein tasarlayabildiğini bildirdi. Tasarlanan yüzlerce mini bağlayıcıdan 35’i laboratuvar testlerinde hedeflerine tutundu; sonuçlar genel amaçlı modellerin ilaç keşfi gibi alanlarda uzman araçlara yaklaşabileceğine işaret ediyor.",
       "source": "OpenAI",
       "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/"
+    },
+    {
+      "id": "2026-11-26-stanford-quantum-gravity-gpt-6-astra",
+      "date": "2026-11-26",
+      "added": "2026-11-26T16:48:04Z",
+      "cat": "research",
+      "title": "Stanford’lu fizikçi, GPT-6 Astra yardımıyla geliştirdiği kuantum kütleçekim önerisini yayımladı",
+      "summary": "Fizikçi Ven Chandrasekaran, ışık konisi üzerinden kütleçekimin cebirsel kuantizasyonunu öneren 83 sayfalık çalışmasını arXiv’e yükledi ve OpenAI’ın GPT-6 Astra modeliyle birlikte geliştirdiğini belirtti. Henüz hakem değerlendirmesinden geçmeyen makale, yapay zekânın temel fizikteki rolü üzerine geniş bir tartışma başlattı.",
+      "source": "The Quantum Insider",
+      "url": "https://thequantuminsider.com/2026/11/26/stanford-physicist-uses-ai-to-tackle-quantum-gravity-problem/"
     }
   ]
 }
