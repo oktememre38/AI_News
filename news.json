@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked": "2026-11-25T20:48:10Z",
+  "checked": "2026-11-26T04:47:37Z",
   "items": [
     {
       "id": "2026-11-04-chatgpt-images-2-6",
@@ -441,6 +441,16 @@
       "summary": "OpenAI, ChatGPT’in Chat ve Work deneyimlerini tek çatıda topluyor; Aralık’tan itibaren ChatGPT ve Codex kullanımı ortak bir kotadan düşülecek. Şirket, yoğun kullanıcıların bu değişiklikle limitlere daha erken ulaşabileceğini kabul ediyor; bu da ücretli planlardaki kullanım hesabını doğrudan etkiliyor.",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/"
+    },
+    {
+      "id": "2026-11-25-openai-gpt6-protein-design",
+      "date": "2026-11-25",
+      "added": "2026-11-26T04:47:37Z",
+      "cat": "research",
+      "title": "OpenAI: GPT-6 modelleri laboratuvarda hedefine bağlanan proteinler tasarladı",
+      "summary": "OpenAI, GPT-6 ailesinin özel bir biyoloji aracı olmadan yalnızca akıl yürütme ve kod yazarak protein tasarlayabildiğini bildirdi. Tasarlanan yüzlerce mini bağlayıcıdan 35’i laboratuvar testlerinde hedeflerine tutundu; sonuçlar genel amaçlı modellerin ilaç keşfi gibi alanlarda uzman araçlara yaklaşabileceğine işaret ediyor.",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/"
     }
   ]
 }
