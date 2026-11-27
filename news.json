@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked": "2026-11-27T10:47:57Z",
+  "checked": "2026-11-27T12:46:52Z",
   "items": [
     {
       "id": "2026-11-04-chatgpt-images-2-6",
@@ -461,6 +461,16 @@
       "summary": "Fizikçi Ven Chandrasekaran, ışık konisi üzerinden kütleçekimin cebirsel kuantizasyonunu öneren 83 sayfalık çalışmasını arXiv’e yükledi ve OpenAI’ın GPT-6 Astra modeliyle birlikte geliştirdiğini belirtti. Henüz hakem değerlendirmesinden geçmeyen makale, yapay zekânın temel fizikteki rolü üzerine geniş bir tartışma başlattı.",
       "source": "The Quantum Insider",
       "url": "https://thequantuminsider.com/2026/11/26/stanford-physicist-uses-ai-to-tackle-quantum-gravity-problem/"
+    },
+    {
+      "id": "2026-11-27-gpt-6-2-billing-fix-limits",
+      "date": "2026-11-27",
+      "added": "2026-11-27T12:46:52Z",
+      "cat": "model",
+      "title": "OpenAI faturalama hatasını düzeltti: GPT-6.2 kullanım limitleri daha erken doluyor",
+      "summary": "OpenAI, GPT-6.2 kullanımının eksik hesaplanmasına yol açan bir faturalama hatasını giderdi. Düzeltmeyle ChatGPT kullanıcıları GPT-6.2 Astra’da limitlere yaklaşık yüzde 40, Sol’da yüzde 25 daha erken ulaşacak; şirket geçişte kullanım limitlerini sıfırladı.",
+      "source": "The Next Web",
+      "url": "https://thenextweb.com/news/openai-billing-mistake-gpt-6-2-usage-limits"
     }
   ]
 }
